@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="star_logo" fill="currentColor" stroke="currentColor">
+    <path d="M7.893 18.784a.7.7 0 0 1-1.075-.781l1.534-4.818-4.073-2.995a.7.7 0 0 1 .41-1.264l5.056-.03 1.59-4.798a.7.7 0 0 1 1.33 0l1.59 4.799 5.055.03a.7.7 0 0 1 .41 1.263l-4.072 2.995 1.534 4.818a.7.7 0 0 1-1.075.78L12 15.837l-4.107 2.948Z" fill="inherit" fill-rule="inherit"/>
+  </symbol>
+</svg>

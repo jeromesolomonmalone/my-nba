@@ -1319,13 +1319,18 @@ body {
 }
 
 .team__start__image {
-  padding: 27px 0 27px 10px;
+  padding: 0 2px 0 10px;
   gap: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-block-end: 1px solid var(--line-color);
   transition: background 0.2s;
+  cursor: pointer;
+}
+
+.team__start__image:hover {
+  background: #f0f0f0;
 }
 
 .team__start__image::after {
@@ -1334,7 +1339,7 @@ body {
   block-size: 12px;
   background: url(https://svgshare.com/i/16fd.svg) center/contain no-repeat;
   rotate: 90deg;
-  transition: rotate 0.3s ease-out;
+  transition: rotate 0.35s ease-out;
 }
 
 .team__start[open] .team__start__image::after {
@@ -1350,216 +1355,20 @@ body {
   font-size: 18px;
   font-weight: 500;
   margin-right: auto;
+  padding: 27px 0;
 }
 
 .start__five {
   position: relative;
-  display: flex;
   inline-size: 100%;
   aspect-ratio: 1/1;
 }
 
-.start__five::before {
-  position: absolute;
-  content: "";
-  display: block;
+.start__five__photo {
   inline-size: 100%;
   block-size: 100%;
-  background: linear-gradient(
-    rgb(255 255 255 / 0) 45%,
-    rgb(255 255 255 / 0.6) 55%,
-    rgb(255 255 255 / 0.75) 60%,
-    rgb(255 255 255 / 0.85) 65%,
-    rgb(255 255 255 / 0.95) 75%,
-    #fff 90%
-  );
-  z-index: 10;
-}
-
-.start__five__slot {
-  inline-size: 20%;
-  block-size: 100%;
-  overflow: hidden;
-}
-
-.start__five__photo {
-  inline-size: 550%;
-  block-size: 100%;
   object-fit: cover;
-  transform: translate(-33%, -11%);
-}
-
-.start__five__holiday,
-.start__five__derozan {
-  transform: translate(-32%, -14%);
-}
-
-.start__five__porzi {
-  inline-size: 850%;
-  transform: translate(-37.5%, -12%);
-}
-
-.start__five__tatum {
-  transform: translate(-32%, -17%);
-}
-
-.start__five__brown {
-  transform: translate(-31%, -12%);
-}
-
-.start__five__deandre {
-  transform: translate(-33.5%, -15%);
-}
-
-.start__five__capela {
-  inline-size: 600%;
-  transform: translate(-32%, -21%);
-}
-
-.start__five__bogda {
-  inline-size: 450%;
-  transform: translate(-30%, -9%);
-}
-
-.start__five__dejonte__murray {
-  inline-size: 600%;
-  transform: translate(-33.5%, -25%);
-}
-
-.start__five__young {
-  inline-size: 575%;
-  transform: translate(-33%, -23%) rotate(5deg);
-}
-
-.start__five__finney_smith {
-  inline-size: 850%;
-  transform: translate(-38%, -6%);
-}
-
-.start__five__claxton {
-  transform: translate(-32%, -25%);
-}
-
-.start__five__cam_thomas {
-  inline-size: 600%;
-  transform: translate(-33.5%, -13%);
-}
-
-.start__five__schroder {
-  inline-size: 600%;
-  transform: translate(-33.5%, -15%);
-}
-
-.start__five__bridges {
-  transform: translate(-34%, -11.5%);
-}
-
-.start__five__nick_richards,
-.start__five__murray {
-  inline-size: 850%;
-  transform: translate(-38%, -18%);
-}
-
-.start__five__tre_mann {
-  inline-size: 1000%;
-  transform: translate(-39.5%, -15%);
-}
-
-.start__five__miles_bridges {
-  inline-size: 900%;
-  transform: translate(-39.5%, -9%);
-}
-
-.start__five__miller {
-  inline-size: 800%;
-  transform: translate(-36.5%, -13%);
-}
-
-.start__five__lamelo_ball {
-  inline-size: 650%;
-  transform: translate(-34.5%, -10%);
-}
-
-.start__five__vucevic,
-.start__five__kentavious {
-  transform: translate(-33.5%, -14%);
-}
-
-.start__five__caruso {
-  transform: translate(-33%, -9%);
-}
-
-.start__five__coby_white {
-  inline-size: 900%;
-  transform: translate(-39%, -25%);
-}
-
-.start__five__lavine {
-  inline-size: 600%;
-  transform: translate(-34.5%, -12%);
-}
-
-.start__five__strus {
-  inline-size: 850%;
-  transform: translate(-39.5%, -13%);
-}
-
-.start__five__garland {
-  inline-size: 600%;
-  transform: translate(-33%, -12%);
-}
-
-.start__five__jarrett_allen {
-  inline-size: 650%;
-  transform: translate(-35%, -20%);
-}
-
-.start__five__mobley {
-  transform: translate(-32%, -11%);
-}
-
-.start__five__mitchell {
-  inline-size: 500%;
-  transform: translate(-32%, -11%);
-}
-
-.start__five__gafford {
-  transform: translate(-33%, -13%);
-}
-
-.start__five__jones_jr {
-  inline-size: 800%;
-  transform: translate(-38%, -3%);
-}
-
-.start__five__washington {
-  inline-size: 600%;
-  transform: translate(-33.5%, -14%);
-}
-
-.start__five__irving {
-  inline-size: 850%;
-  transform: translate(-38%, -11%);
-}
-
-.start__five__doncic {
-  inline-size: 525%;
-  transform: translate(-32.5%, -27%);
-}
-
-.start__five__gordon {
-  inline-size: 750%;
-  transform: translate(-37%, -12%);
-}
-
-.start__five__porter {
-  inline-size: 650%;
-  transform: translate(-34.5%, -18%) rotate(3deg);
-}
-
-.start__five__jokic {
-  inline-size: 650%;
-  transform: translate(-35%, -26%);
+  object-position: center;
 }
 
 .start__five__table__wrapper {
@@ -1596,7 +1405,7 @@ body {
 }
 
 .start__five__table .table__text {
-  padding: 0 8px;
+  padding: 0 10px;
   font-weight: 450;
   font-family: var(--font-table), sans-serif;
 }
@@ -1607,6 +1416,10 @@ body {
 
 .table__text:not(:last-of-type) {
   text-align: center;
+}
+
+.table__text:last-of-type {
+  text-align: end;
 }
 
 .footer {
@@ -1726,7 +1539,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    top: 0;
+    top: -1px;
   }
 
   .fox_sports_logo {
@@ -1760,7 +1573,7 @@ body {
 
   .menu__sticky {
     padding: 0;
-    top: 83px;
+    top: 82px;
   }
 
   .player__awards__photo {
@@ -1879,6 +1692,7 @@ body {
   .menu__sticky {
     border-block-start: 1px solid #ffffff1a;
     background: var(--back-color);
+    top: 90px;
   }
 
   .menu_navigation {
@@ -2306,7 +2120,7 @@ body {
   }
 
   .team__start__image {
-    padding: 27px 25px;
+    padding: 0 25px;
   }
 
   .team__start__logo {
