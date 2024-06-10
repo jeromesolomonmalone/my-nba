@@ -356,10 +356,6 @@ body {
   color: var(--light-color);
 }
 
-.button__star__stroke {
-  stroke: var(--light-color);
-}
-
 .menu {
   margin-inline-start: 60px;
   inline-size: 530px;
