@@ -14,6 +14,7 @@
   --font-main: "Oswald";
   --font-link: "Roboto Condensed";
   --font-table: "Schibsted Grotesk";
+  --font-fits: "Niconne";
 }
 
 *,
@@ -1877,12 +1878,13 @@ body {
 
   .menu_navigation {
     padding: 0 110px;
+    gap: 20px;
   }
 
   .menu__button {
     padding: 21px 0 24px;
     color: var(--light-header);
-    font-size: 18px;
+    font-size: 23px;
     line-height: 20.01px;
   }
 
@@ -2064,7 +2066,8 @@ body {
   }
 
   .menu_navigation {
-    padding: 0 10px;
+    padding: 0 25px;
+    gap: 25px;
     background: var(--back-color);
   }
 
