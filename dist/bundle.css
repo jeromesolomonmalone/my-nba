@@ -14,6 +14,7 @@
   --font-main: "Oswald";
   --font-link: "Roboto Condensed";
   --font-table: "Schibsted Grotesk";
+  --font-fits: "Niconne";
 }
 
 *,
@@ -32,8 +33,8 @@ li,
 a {
   margin: 0;
   padding: 0;
-  list-style: none;
   text-decoration: none;
+  list-style: none;
 }
 
 img,
@@ -61,35 +62,35 @@ summary::-webkit-details-marker {
 }
 
 body {
-  max-inline-size: 1280px;
-  margin: 0 auto;
-  font-family: var(--font-main);
   display: grid;
   grid-template-columns: max-content auto;
+  margin: 0 auto;
+  font-family: var(--font-main);
+  max-inline-size: 1280px;
 }
 
 .header {
-  inline-size: 130px;
-  padding: 60px 0 0 40px;
-  background: var(--light-color);
-  block-size: max-content;
   position: sticky;
   top: 0;
   z-index: 100;
   grid-row: span 10;
+  padding: 60px 0 0 40px;
+  background: var(--light-color);
+  inline-size: 130px;
+  block-size: max-content;
 }
 
 .fox_sports_logo {
-  inline-size: 69px;
   color: var(--main-color);
+  inline-size: 69px;
 }
 
 .header__open__navigation {
   margin: 54px 0 80px;
-  font-size: 12px;
-  text-transform: uppercase;
   font-family: var(--font-link);
   font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 
 .dialog__list li {
@@ -101,41 +102,41 @@ body {
 }
 
 .header__open__navigation li:last-child::before {
-  padding-block-start: 12px;
-  display: block;
   content: "";
+  display: block;
+  border-block-start: 1px solid var(--line-color);
+  padding-block-start: 12px;
   inline-size: 25px;
   block-size: 1px;
-  border-block-start: 1px solid var(--line-color);
 }
 
 .header__open__navigation a {
-  block-size: 40px;
   display: flex;
   align-items: center;
   color: var(--header-link);
   transition: color 0.25s ease;
+  block-size: 40px;
 }
 
 .header__follow a {
   display: inline;
-  font-size: 11px;
-  font-family: var(--font-link);
   color: var(--header-link);
+  font-family: var(--font-link);
+  font-size: 11px;
   cursor: default;
 }
 
 .dialog__list a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 54px;
+  color: var(--header-link);
   font-size: 23px;
   text-transform: uppercase;
-  color: var(--header-link);
-  inline-size: 100%;
-  padding: 0 54px;
-  block-size: 70px;
-  display: flex;
-  align-items: center;
   transition: background 0.25s ease;
-  justify-content: space-between;
+  inline-size: 100%;
+  block-size: 70px;
 }
 
 .header__open__navigation a:hover {
@@ -143,16 +144,16 @@ body {
 }
 
 .search_logo {
+  margin: 1px 0 0 2px;
   color: currentColor;
   inline-size: 11px;
-  margin: 1px 0 0 2px;
 }
 
 .arrow_logo {
-  color: currentColor;
-  inline-size: 16px;
   margin-inline-start: 2px;
+  color: currentColor;
   transition: margin-inline-start 0.15s ease-out;
+  inline-size: 16px;
 }
 
 .header__open__navigation li:last-child a:hover .arrow_logo {
@@ -165,24 +166,24 @@ body {
 
 .header__follow button {
   display: block;
-  inline-size: 56px;
-  block-size: 56px;
-  border-radius: 50%;
+  margin-block-end: 13px;
   border: none;
-  cursor: pointer;
+  border-radius: 50%;
   background: #f0f0f0;
   background-image: url("https://svgshare.com/i/16Kg.svg");
-  background-size: 20px 20px;
   background-repeat: no-repeat;
   background-position: center;
-  margin-block-end: 13px;
+  background-size: 20px 20px;
+  cursor: pointer;
+  inline-size: 56px;
+  block-size: 56px;
 }
 
 .header__hidden__logo {
   display: none;
+  margin: 0 auto;
   block-size: 40px;
   inline-size: 40px;
-  margin: 0 auto;
 }
 
 .header__hidden {
@@ -192,38 +193,38 @@ body {
 }
 
 .header__favorites {
-  text-transform: uppercase;
-  font-size: 10px;
-  font-weight: 500;
-  font-family: var(--font-main);
   color: var(--main-color);
+  font-family: var(--font-main);
+  font-weight: 500;
+  font-size: 10px;
+  text-transform: uppercase;
 }
 
 .star_logo {
-  inline-size: 16px;
   margin: 0 auto;
+  inline-size: 16px;
 }
 
 .header__hidden button,
 .dialog__icons button {
+  border: none;
   padding: 0;
   background: transparent;
-  border: none;
   cursor: pointer;
 }
 
 .three_lines_logo {
-  inline-size: 25px;
   color: var(--main-color);
+  inline-size: 25px;
 }
 
 .hidden_menu {
+  margin: 0;
   border: none;
+  padding: 0;
   max-inline-size: 438px;
   inline-size: 100%;
   block-size: 100vh;
-  margin: 0;
-  padding: 0;
 }
 
 .hidden_menu::backdrop {
@@ -231,26 +232,26 @@ body {
 }
 
 .dialog__block {
-  padding: 0 54px;
-  inline-size: 100%;
-  background: var(--light-color);
   display: grid;
-  grid-template: repeat(3, auto) / repeat(2, auto);
   justify-content: space-between;
   align-items: center;
+  padding: 0 54px;
+  background: var(--light-color);
+  inline-size: 100%;
+  grid-template: repeat(3, auto) / repeat(2, auto);
 }
 
 .fox_sports_logo_dialog {
+  color: var(--main-color);
   inline-size: 40px;
   block-size: 90px;
-  color: var(--main-color);
 }
 
 .dialog__icons {
   display: flex;
+  justify-content: end;
   align-items: center;
   gap: 25px;
-  justify-content: end;
 }
 
 .dialog__icon {
@@ -264,44 +265,44 @@ body {
 }
 
 .dialog__navigation:last-child::before {
-  padding-block-start: 12px;
-  display: block;
   content: "";
+  display: block;
+  border-block-start: 1px solid var(--line-color);
+  padding-block-start: 12px;
   inline-size: 100%;
   block-size: 1px;
-  border-block-start: 1px solid var(--line-color);
 }
 
 .dialog__list a:hover {
-  background: var(--shadow-color);
   color: var(--main-color);
+  background: var(--shadow-color);
 }
 
 .dialog__navigation:last-child a::after {
-  display: block;
   content: "";
+  display: block;
+  background: url("https://svgshare.com/i/16Kt.svg") center/contain no-repeat;
   inline-size: 12px;
   block-size: 12px;
-  background: url("https://svgshare.com/i/16Kt.svg") center/contain no-repeat;
 }
 
 .main {
-  margin-inline-start: 97px;
   display: flex;
+  margin-inline-start: 97px;
 }
 
 .main__color {
-  margin-block-start: 60px;
-  inline-size: 362px;
-  block-size: 630px;
-  padding: 55px 50px;
-  background: var(--back-color);
+  position: sticky;
+  top: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-block-start: 60px;
   border-radius: 5px;
-  position: sticky;
-  top: 60px;
+  padding: 55px 50px;
+  background: var(--back-color);
+  inline-size: 362px;
+  block-size: 630px;
 }
 
 .main__logo {
@@ -310,31 +311,31 @@ body {
 }
 
 .main__title {
-  text-transform: uppercase;
-  color: var(--light-color);
-  font-size: 40px;
-  font-weight: 400;
   padding: 15px 15px 0;
+  color: var(--light-color);
+  font-weight: 400;
+  font-size: 40px;
+  text-transform: uppercase;
 }
 
 .main__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
   margin-block-start: 50px;
-  background-color: transparent;
   border: 2px solid rgb(255 255 255 / 0.5);
-  color: var(--light-color);
   border-radius: 27.5px;
+  color: var(--light-color);
+  font-family: var(--font-main);
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: transparent;
+  transition: 0.3s;
+  cursor: pointer;
   max-inline-size: 225px;
   block-size: 55px;
-  cursor: pointer;
-  font-size: 14px;
   inline-size: 173px;
-  text-transform: uppercase;
-  font-family: var(--font-main);
-  transition: 0.3s;
-  display: flex;
-  gap: 4px;
-  align-items: center;
-  justify-content: center;
 }
 
 .main__button:hover {
@@ -346,9 +347,9 @@ body {
 }
 
 .button__star {
-  inline-size: 15px;
   color: transparent;
   transition: 0.3s;
+  inline-size: 15px;
 }
 
 .main__button:hover .button__star,
@@ -363,47 +364,47 @@ body {
 
 .menu__sticky {
   position: sticky;
-  padding-block-start: 60px;
   top: 0;
-  background: var(--light-color);
   z-index: 99;
+  padding-block-start: 60px;
+  background: var(--light-color);
 }
 
 .menu_navigation {
   display: flex;
   flex-wrap: nowrap;
-  overflow-x: auto;
   justify-content: space-between;
   border-block-end: 1px solid var(--line-main-color);
+  overflow-x: auto;
 }
 
 .menu_navigation::-webkit-scrollbar {
-  width: 0;
   display: none;
+  width: 0;
 }
 
 .menu__button {
   position: relative;
   display: block;
-  color: var(--header-link);
-  cursor: pointer;
-  padding: 0 0 24px;
-  font-size: 20px;
-  font-family: var(--font-main);
-  text-transform: uppercase;
-  font-weight: 450;
-  letter-spacing: -0.02em;
   border: none;
+  padding: 0 0 24px;
+  color: var(--header-link);
+  font-family: var(--font-main);
+  font-weight: 450;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
   background: transparent;
-  white-space: nowrap;
   transition: color 0.25s ease;
+  cursor: pointer;
+  white-space: nowrap;
 }
 
 .menu__button:hover,
 .menu__button:focus {
+  border-block-end: 2px solid var(--main-color);
   padding: 0 0 22px;
   color: var(--main-color);
-  border-block-end: 2px solid var(--main-color);
 }
 
 .menu__button label {
@@ -428,10 +429,10 @@ body {
 
 .standings__title {
   padding: 30px 0 40px;
-  font-size: 30px;
   font-weight: 450;
-  letter-spacing: -0.02em;
+  font-size: 30px;
   line-height: 30px;
+  letter-spacing: -0.02em;
 }
 
 .standings__table {
@@ -440,8 +441,8 @@ body {
 }
 
 .start__five__table {
-  border-collapse: collapse;
   color: var(--main-color);
+  border-collapse: collapse;
 }
 
 .standings__table td {
@@ -465,8 +466,8 @@ body {
 }
 
 .standings__table td:nth-child(3) {
-  font-size: 18px;
   font-weight: 500;
+  font-size: 18px;
 }
 
 .standings__table th {
@@ -487,26 +488,26 @@ body {
 }
 
 .standings__table th:first-child {
-  font-size: 16px;
-  font-weight: 500;
   padding: 0 6px 13px 0;
+  font-weight: 500;
+  font-size: 16px;
   text-align: left;
 }
 
 .standings__table td:first-child {
-  min-inline-size: 21px;
-  color: var(--header-link);
-  font-size: 11px;
-  font-family: var(--font-table);
-  block-size: 82px;
   padding: 0 6px 0 15px;
+  color: var(--header-link);
+  font-family: var(--font-table);
+  font-size: 11px;
+  min-inline-size: 21px;
+  block-size: 82px;
 }
 
 .standings__table td:nth-child(1n + 4) {
-  font-family: var(--font-table);
   padding: 0 5px;
-  font-size: 14px;
+  font-family: var(--font-table);
   font-weight: 600;
+  font-size: 14px;
   text-align: right;
 }
 
@@ -532,20 +533,20 @@ body {
       transparent 18px,
       var(--header-link) 18px
     );
-  background-size: 1px 100%,
-    100% 1px;
+  background-repeat: no-repeat;
   background-position: 0 0,
     0 100%;
-  background-repeat: no-repeat;
+  background-size: 1px 100%,
+    100% 1px;
 }
 
 .standings__table th:not(:first-child) {
-  font-size: 11px;
-  color: var(--header-link);
   padding: 0 5px 13px;
-  text-align: right;
-  font-weight: 400;
+  color: var(--header-link);
   font-family: var(--font-table);
+  font-weight: 400;
+  font-size: 11px;
+  text-align: right;
 }
 
 .table__logo {
@@ -567,8 +568,8 @@ body {
 .western__conference {
   position: relative;
   display: grid;
-  align-items: center;
   grid-template-columns: auto 0.5fr 0.5fr auto 1fr auto;
+  align-items: center;
   margin-inline-start: 45px;
   padding: 0 5px 0 10px;
 }
@@ -589,64 +590,64 @@ body {
 
 .conference__logo {
   position: absolute;
-  inline-size: 35px;
-  block-size: 35px;
-  object-fit: contain;
-  object-position: center;
   top: 45%;
   right: 100%;
   margin-inline-end: 20px;
+  object-fit: contain;
+  object-position: center;
+  inline-size: 35px;
+  block-size: 35px;
 }
 
 .western__conference::before {
   content: "";
   position: absolute;
-  block-size: 2px;
-  inline-size: 8px;
   top: 0;
   left: -5px;
   border-radius: 1px;
   background: #ec174c;
+  block-size: 2px;
+  inline-size: 8px;
 }
 
 .western__conference::after {
   content: "";
   position: absolute;
-  block-size: 2px;
-  inline-size: 8px;
   bottom: 0;
   left: -5px;
   border-radius: 1px;
   background: #ec174c;
+  block-size: 2px;
+  inline-size: 8px;
 }
 
 .eastern__conference::before {
   content: "";
   position: absolute;
-  block-size: 2px;
-  inline-size: 8px;
   top: 0;
   left: -5px;
-  background: #006bb6;
   border-radius: 1px;
+  background: #006bb6;
+  block-size: 2px;
+  inline-size: 8px;
 }
 
 .eastern__conference::after {
   content: "";
   position: absolute;
-  block-size: 2px;
-  inline-size: 8px;
   bottom: 0;
   left: -5px;
   border-radius: 1px;
   background: #006bb6;
+  block-size: 2px;
+  inline-size: 8px;
 }
 
 .two__teams {
-  inline-size: max-content;
   border: 1px solid var(--line-color);
   border-radius: 10px;
   overflow: hidden;
+  inline-size: max-content;
 }
 
 .first__round__up .two__teams {
@@ -679,31 +680,31 @@ body {
 }
 
 .stage__name {
-  text-transform: uppercase;
-  font-weight: 450;
-  color: var(--playoffs-eliminated);
   position: absolute;
-  inline-size: 100%;
-  text-align: center;
-  font-size: 12px;
   bottom: 100%;
   left: 0;
-  background: var(--light-color);
   z-index: 10;
+  color: var(--playoffs-eliminated);
+  font-weight: 450;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  background: var(--light-color);
+  inline-size: 100%;
 }
 
 .team {
   display: flex;
-  inline-size: 110px;
   justify-content: space-between;
   align-items: center;
+  inline-size: 110px;
 }
 
 .final__logo {
-  inline-size: 90px;
+  margin: 5px auto;
   object-fit: contain;
   object-position: center;
-  margin: 5px auto;
+  inline-size: 90px;
 }
 
 .team__next {
@@ -767,36 +768,36 @@ body {
 }
 
 .team__logo {
+  overflow: hidden;
   inline-size: 30px;
   block-size: 30px;
-  overflow: hidden;
 }
 
 .team__logo img {
-  inline-size: 54px;
-  block-size: 54px;
   object-fit: cover;
   object-position: center;
   transform: translate(-12px, -12px);
+  inline-size: 54px;
+  block-size: 54px;
 }
 
 .team__place {
+  font-family: var(--font-table);
   font-size: 11px;
   line-height: 27px;
-  font-family: var(--font-table);
 }
 
 .team__name {
-  text-transform: uppercase;
-  font-size: 16px;
   font-weight: 550;
+  font-size: 16px;
   letter-spacing: -0.02em;
+  text-transform: uppercase;
 }
 
 .team__wins {
-  font-size: 16px;
-  font-weight: 550;
   margin-inline-end: 4px;
+  font-weight: 550;
+  font-size: 16px;
 }
 
 .team__eliminated {
@@ -818,17 +819,17 @@ body {
 }
 
 .table_lines span {
-  block-size: 73px;
   border: 2px solid var(--line-color);
-  border-inline-start: none;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+  border-inline-start: none;
+  block-size: 73px;
 }
 
 .semifinals__before {
-  block-size: 144px;
   border-block-start: 2px solid var(--line-color);
   border-block-end: 2px solid var(--line-color);
+  block-size: 144px;
 }
 
 .semifinals {
@@ -838,79 +839,79 @@ body {
 }
 
 .semifinals__between {
-  inline-size: 100%;
   display: flex;
   flex-direction: column;
   align-items: end;
+  inline-size: 100%;
 }
 
 .first__round__down span {
+  align-self: start;
+  border-bottom-right-radius: 5px;
+  border-inline-end: 2px solid var(--line-color);
+  border-block-end: 2px solid var(--line-color);
   inline-size: 50px;
   block-size: 50%;
-  align-self: start;
-  border-block-end: 2px solid var(--line-color);
-  border-inline-end: 2px solid var(--line-color);
-  border-bottom-right-radius: 5px;
 }
 
 .first__round__up span {
   position: relative;
+  align-self: end;
+  border-top-right-radius: 5px;
+  border-inline-end: 2px solid var(--line-color);
+  border-block-start: 2px solid var(--line-color);
   inline-size: 50px;
   block-size: 50%;
-  align-self: end;
-  border-block-start: 2px solid var(--line-color);
-  border-inline-end: 2px solid var(--line-color);
-  border-top-right-radius: 5px;
 }
 
 .semifinals__between span:first-of-type {
-  inline-size: 50%;
-  block-size: 40px;
   border-inline-start: 2px solid var(--line-color);
   border-block-end: 1px solid var(--line-color);
+  inline-size: 50%;
+  block-size: 40px;
 }
 
 .semifinals__between span:last-of-type {
-  inline-size: 50%;
-  block-size: 40px;
   border-inline-start: 2px solid var(--line-color);
   border-block-start: 1px solid var(--line-color);
+  inline-size: 50%;
+  block-size: 40px;
 }
 
 .finals__before {
-  block-size: 0;
   border-block-start: 1px solid var(--line-color);
   border-block-end: 1px solid var(--line-color);
+  block-size: 0;
 }
 
 .conference__finals__up::after {
+  content: "";
   position: absolute;
   top: 100%;
   left: 50%;
-  content: "";
-  inline-size: 0;
-  block-size: 122px;
   border-inline-start: 2px solid var(--line-color);
   border-inline-end: 1px solid var(--line-color);
+  inline-size: 0;
+  block-size: 122px;
 }
 
 .conference__finals__down::after {
+  content: "";
   position: absolute;
   bottom: 100%;
   left: 50%;
-  content: "";
-  inline-size: 0;
-  block-size: 122px;
   border-inline-start: 2px solid var(--line-color);
   border-inline-end: 1px solid var(--line-color);
+  inline-size: 0;
+  block-size: 122px;
 }
 
 .final {
   position: absolute;
-  background: var(--light-color);
-  z-index: 11;
-  right: 0;
   top: 41%;
+  right: 0;
+  z-index: 11;
+  background: var(--light-color);
 }
 
 .final .team {
@@ -919,22 +920,22 @@ body {
 
 .final__lines {
   display: none;
-  inline-size: 20px;
   margin: 0 auto;
+  inline-size: 20px;
 }
 
 .final__lines span:first-of-type {
-  inline-size: 50%;
-  block-size: 66px;
   border-inline-end: 1px solid var(--line-color);
   border-block-end: 2px solid var(--line-color);
+  inline-size: 50%;
+  block-size: 66px;
 }
 
 .final__lines span:last-of-type {
-  inline-size: 50%;
-  block-size: 66px;
   border-inline-start: 1px solid var(--line-color);
   border-block-end: 2px solid var(--line-color);
+  inline-size: 50%;
+  block-size: 66px;
 }
 
 .playin__grid {
@@ -957,11 +958,11 @@ body {
 }
 
 .playin__logo {
-  inline-size: 100px;
-  block-size: 35px;
+  margin-block-end: 15px;
   object-fit: contain;
   object-position: center;
-  margin-block-end: 15px;
+  inline-size: 100px;
+  block-size: 35px;
 }
 
 .first__round__up,
@@ -970,17 +971,17 @@ body {
 }
 
 .playin__conference .first__round__up span::after {
-  display: none;
-  position: absolute;
   content: "7/8 Loser vs. 9/10 Winner";
-  inline-size: 60px;
-  left: 100%;
+  position: absolute;
   bottom: 100%;
+  left: 100%;
+  display: none;
   margin-inline-start: 10px;
-  text-transform: uppercase;
-  font-weight: 450;
   color: var(--playoffs-eliminated);
+  font-weight: 450;
   font-size: 12px;
+  text-transform: uppercase;
+  inline-size: 60px;
 }
 
 .playin__conference .conference__finals {
@@ -1000,19 +1001,19 @@ body {
 }
 
 .playin__reverse .first__round__up span::after {
-  display: none;
-  position: absolute;
   content: "7/8 Loser vs. 9/10 Winner";
-  inline-size: 60px;
-  left: 100%;
+  position: absolute;
   bottom: 100%;
+  left: 100%;
+  display: none;
   margin-inline-start: 10px;
-  text-transform: uppercase;
-  font-weight: 450;
   color: var(--playoffs-eliminated);
+  font-weight: 450;
   font-size: 12px;
   text-align: end;
+  text-transform: uppercase;
   transform: scaleX(-1);
+  inline-size: 60px;
 }
 
 .playin__reverse .conference__finals {
@@ -1022,10 +1023,10 @@ body {
 .stats__title {
   margin: 50px 0 14px;
   border-block-end: solid 1px var(--line-color);
-  text-transform: uppercase;
-  font-size: 16px;
   font-weight: 500;
+  font-size: 16px;
   letter-spacing: -0.02em;
+  text-transform: uppercase;
 }
 
 .stats__title:first-of-type {
@@ -1044,12 +1045,12 @@ body {
 }
 
 .player__stats__card {
-  inline-size: 240px;
   position: relative;
-  padding: 20px 0;
   margin: 20px 0;
-  cursor: pointer;
+  padding: 20px 0;
   transition: background 0.2s;
+  cursor: pointer;
+  inline-size: 240px;
 }
 
 .player__stats__card:nth-child(even) {
@@ -1063,31 +1064,31 @@ body {
 .player__stats .player__stats__card:not(:nth-child(1n + 11))::after,
 .team__stats .player__stats__card:not(:nth-child(1n + 9))::after,
 .player__awards__card:not(:nth-child(1n + 9))::after {
-  position: absolute;
   content: "";
-  inline-size: 100%;
-  display: block;
-  left: 0;
+  position: absolute;
   bottom: -20px;
+  left: 0;
+  display: block;
   border-block-end: 1px solid var(--line-main-color);
+  inline-size: 100%;
 }
 
 .stats__card__title {
-  font-size: 18px;
-  text-transform: uppercase;
-  font-weight: 450;
-  letter-spacing: -0.02em;
   padding-block-end: 25px;
+  font-weight: 450;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
 }
 
 .stats__card__title::after {
   content: "";
   display: inline-block;
-  inline-size: 16px;
-  block-size: 16px;
+  margin-inline-start: 2px;
   background: url("https://svgshare.com/i/16Ti.svg") center/contain no-repeat;
   transition: transform 0.15s ease-out;
-  margin-inline-start: 2px;
+  inline-size: 16px;
+  block-size: 16px;
 }
 
 .player__stats__card:hover .stats__card__title::after {
@@ -1102,23 +1103,23 @@ body {
 
 .stats__card__photo {
   grid-row: 1/3;
-  inline-size: 70px;
-  block-size: 70px;
-  object-fit: cover;
-  object-position: center;
   border: solid 1px var(--stats-line);
   border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  inline-size: 70px;
+  block-size: 70px;
 }
 
 .stats__card__lastname,
 .player__awards__lastname {
   display: flex;
-  gap: 5px;
-  font-size: 18px;
-  font-weight: 450;
-  letter-spacing: -0.02em;
-  line-height: 1;
   align-items: center;
+  gap: 5px;
+  font-weight: 450;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: -0.02em;
 }
 
 .long__name {
@@ -1126,19 +1127,19 @@ body {
 }
 
 .stats__card__team {
-  align-self: start;
-  text-transform: uppercase;
   display: flex;
   align-items: center;
+  align-self: start;
+  text-transform: uppercase;
 }
 
 .stats__card__team::before {
   content: "";
+  margin-inline-end: 5px;
+  border-radius: 2px;
   background: black;
   inline-size: 2px;
   block-size: 2px;
-  border-radius: 2px;
-  margin-inline-end: 5px;
 }
 
 .stats__card__number {
@@ -1148,11 +1149,11 @@ body {
 
 .stats__card__value {
   display: inline-block;
-  text-transform: uppercase;
-  color: var(--header-link);
-  font-size: 11px;
-  font-family: var(--font-table);
   margin-inline-start: 5px;
+  color: var(--header-link);
+  font-family: var(--font-table);
+  font-size: 11px;
+  text-transform: uppercase;
   inline-size: min-content;
 }
 
@@ -1160,31 +1161,31 @@ body {
   grid-row: 1/3;
   border: solid 1px var(--stats-line);
   border-radius: 50%;
-  inline-size: 70px;
-  block-size: 70px;
   overflow: hidden;
   transform: rotate(-45deg);
+  inline-size: 70px;
+  block-size: 70px;
 }
 
 .stats__card__up__photo {
+  border-block-end: solid 1px var(--stats-line);
+  overflow: hidden;
   inline-size: 70px;
   block-size: 35px;
-  overflow: hidden;
-  border-block-end: solid 1px var(--stats-line);
 }
 
 .double__photo {
-  inline-size: 70px;
-  block-size: 70px;
   object-fit: cover;
   object-position: center;
   transform: translateY(-17px) rotate(45deg);
+  inline-size: 70px;
+  block-size: 70px;
 }
 
 .stats__card__down__photo {
+  overflow: hidden;
   inline-size: 70px;
   block-size: 35px;
-  overflow: hidden;
 }
 
 .player__awards {
@@ -1197,15 +1198,15 @@ body {
 
 .player__awards__card {
   position: relative;
-  padding: 20px 0;
   margin: 20px 0;
+  padding: 20px 0;
 }
 
 .player__awards__title {
-  font-size: 20px;
-  font-weight: 500;
-  letter-spacing: -0.02em;
   padding-block-end: 25px;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: -0.02em;
 }
 
 .player__awards__main {
@@ -1215,66 +1216,66 @@ body {
 }
 
 .player__awards__photo {
-  inline-size: 80px;
-  block-size: 80px;
-  object-fit: cover;
-  object-position: center;
+  align-self: start;
   border: solid 1px var(--stats-line);
   border-radius: 50%;
-  align-self: start;
+  object-fit: cover;
+  object-position: center;
+  inline-size: 80px;
+  block-size: 80px;
 }
 
 .player__awards__lastname,
 .all__team__lastname {
   display: flex;
-  gap: 5px;
-  font-size: 20px;
-  font-weight: 450;
-  letter-spacing: -0.02em;
   align-items: center;
+  gap: 5px;
+  font-weight: 450;
+  font-size: 20px;
+  letter-spacing: -0.02em;
 }
 
 .player__awards__team {
-  inline-size: 25px;
-  block-size: 25px;
   object-fit: contain;
   object-position: center;
+  inline-size: 25px;
+  block-size: 25px;
 }
 
 .player__awards__what {
   display: inline-block;
   color: var(--header-link);
-  font-size: 14px;
   font-family: var(--font-table);
+  font-size: 14px;
 }
 
 .player__awards__stats {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 5px;
   justify-content: start;
+  column-gap: 5px;
 }
 
 .player__awards__number {
-  font-size: 18px;
   font-weight: 500;
+  font-size: 18px;
 }
 
 .player__awards__value {
   display: inline-block;
-  text-transform: uppercase;
-  color: var(--header-link);
-  font-size: 14px;
-  font-family: var(--font-table);
   margin-inline-end: 5px;
+  color: var(--header-link);
+  font-family: var(--font-table);
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 .all__teams__title {
-  font-size: 18px;
-  font-weight: 450;
-  letter-spacing: -0.02em;
-  padding: 10px 0 13px;
   border-block-end: solid 1px var(--stats-line);
+  padding: 10px 0 13px;
+  font-weight: 450;
+  font-size: 18px;
+  letter-spacing: -0.02em;
 }
 
 .all__team {
@@ -1292,21 +1293,21 @@ body {
 }
 
 .all__team__photo {
-  inline-size: 60px;
-  block-size: 60px;
-  object-fit: cover;
-  object-position: center;
+  margin-inline-end: 15px;
   border: solid 1px var(--stats-line);
   border-radius: 50%;
-  margin-inline-end: 15px;
+  object-fit: cover;
+  object-position: center;
+  inline-size: 60px;
+  block-size: 60px;
 }
 
 .all__team__position,
 .all__team__name {
-  text-transform: uppercase;
-  font-size: 14px;
-  font-family: var(--font-table);
   margin-inline-start: 5px;
+  font-family: var(--font-table);
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 .all__team__club {
@@ -1315,10 +1316,10 @@ body {
 }
 
 .all__team__img {
-  inline-size: 30px;
-  block-size: 26px;
   object-fit: contain;
   object-position: center;
+  inline-size: 30px;
+  block-size: 26px;
 }
 
 .start5 {
@@ -1326,12 +1327,12 @@ body {
 }
 
 .team__start__image {
-  padding: 0 2px 0 10px;
-  gap: 20px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  gap: 20px;
   border-block-end: 1px solid var(--line-color);
+  padding: 0 2px 0 10px;
   transition: background 0.2s;
   cursor: pointer;
 }
@@ -1342,11 +1343,11 @@ body {
 
 .team__start__image::after {
   content: "";
+  background: url("https://svgshare.com/i/16fd.svg") center/contain no-repeat;
+  transition: rotate 0.35s ease-out;
   inline-size: 12px;
   block-size: 12px;
-  background: url("https://svgshare.com/i/16fd.svg") center/contain no-repeat;
   rotate: 90deg;
-  transition: rotate 0.35s ease-out;
 }
 
 .team__start[open] .team__start__image::after {
@@ -1358,11 +1359,11 @@ body {
 }
 
 .team__start__title {
-  line-height: 1;
-  font-size: 18px;
-  font-weight: 500;
   margin-right: auto;
   padding: 27px 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1;
 }
 
 .start__five {
@@ -1372,49 +1373,49 @@ body {
 }
 
 .start__five__photo {
-  inline-size: 100%;
-  block-size: 100%;
   object-fit: cover;
   object-position: center;
+  inline-size: 100%;
+  block-size: 100%;
 }
 
 .start__five__table__wrapper {
   position: absolute;
+  z-index: 11;
   margin-inline: auto;
-  inset-inline: 0;
-  inset-block-start: 55%;
   border: 2px solid var(--main-color);
   border-radius: 8px;
+  inset-inline: 0;
+  inset-block-start: 55%;
   inline-size: max-content;
-  z-index: 11;
 }
 
 .start__five__table .table__head {
   font-family: var(--font-table);
-  text-align: center;
   font-weight: 750;
   font-size: 14px;
+  text-align: center;
   text-transform: uppercase;
 }
 
 .table__player__name {
-  font-size: 18px;
-  font-weight: 550;
-  block-size: 31px;
   padding-inline-start: 5px;
+  font-weight: 550;
+  font-size: 18px;
+  block-size: 31px;
 }
 
 .table__up {
-  vertical-align: text-top;
   margin-inline-start: 5px;
-  font-size: 11px;
+  vertical-align: text-top;
   font-family: var(--font-table);
+  font-size: 11px;
 }
 
 .start__five__table .table__text {
   padding: 0 10px;
-  font-weight: 450;
   font-family: var(--font-table), sans-serif;
+  font-weight: 450;
 }
 
 .table__text:nth-child(2) {
@@ -1431,18 +1432,18 @@ body {
 
 .fits__title {
   padding-block-start: 30px;
-  font-size: 30px;
   font-weight: 450;
-  letter-spacing: -0.02em;
+  font-size: 30px;
   line-height: 30px;
+  letter-spacing: -0.02em;
   text-transform: uppercase;
 }
 
 .fits__author {
-  margin: 15px 0 40px;
   display: flex;
   align-items: end;
   gap: 10px;
+  margin: 15px 0 40px;
 }
 
 .fits__link__logo {
@@ -1450,10 +1451,10 @@ body {
 }
 
 .fits h3 {
-  font-size: 25px;
-  font-weight: 500;
-  letter-spacing: -0.02em;
   padding-block-end: 20px;
+  font-weight: 500;
+  font-size: 25px;
+  letter-spacing: -0.02em;
 }
 
 .fits__card,
@@ -1461,46 +1462,48 @@ body {
 .fits__card__personal {
   position: relative;
   inline-size: 100%;
-  border: 1px solid tomato;
 }
 
 .fits__card::before {
-  content: '';
-  display: block;
+  content: "";
   position: absolute;
-  inline-size: 100%;
-  block-size: 100%;
   top: 0;
   left: 0;
-  background: linear-gradient(rgba(255,255,255,0) 55%,rgba(255,255,255,0.7) 80%, rgba(255,255,255,1) 90%);
   z-index: 1;
+  display: block;
+  background: linear-gradient(
+    rgb(255 255 255 / 0) 55%,
+    rgb(255 255 255 / 0.7) 80%,
+    rgb(255 255 255 / 1) 90%
+  );
+  inline-size: 100%;
+  block-size: 100%;
 }
 
 .fits__team {
   inline-size: 100%;
-  border: 1px solid lime;
 }
 
 .fits__names {
   position: absolute;
-  z-index: 2;
   bottom: 5%;
   left: 0;
+  z-index: 2;
   display: flex;
-  gap: 10px;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 10px;
   padding: 0 10px;
 }
 
 .fits__name {
   display: flex;
-  gap: 5px;
   align-items: center;
-  white-space: nowrap;
-  font-size: 20px;
+  gap: 5px;
   font-weight: 500;
+  font-size: 20px;
   text-transform: capitalize;
+  white-space: nowrap;
 }
 
 .fits__firstname {
@@ -1509,96 +1512,105 @@ body {
 }
 
 .fits__card__personal::before {
-  content: '';
-  display: block;
+  content: "";
   position: absolute;
-  inline-size: 100%;
-  block-size: 100%;
   top: bottom;
   left: 0;
-  background: linear-gradient(rgba(255,255,255,0) 70%,rgba(255,255,255,1)95%);
   z-index: 1;
+  display: block;
+  background: linear-gradient(
+    rgb(255 255 255 / 0) 70%,
+    rgb(255 255 255 / 1) 95%
+  );
+  inline-size: 100%;
+  block-size: 100%;
 }
 
 .fits__name__personal {
   position: absolute;
-  z-index: 2;
-  bottom: 7%;
+  bottom: 4%;
   left: 0;
-  inline-size: 100%;
-  text-align: center;
+  z-index: 2;
   display: flex;
   flex-direction: column;
-  white-space: nowrap;
-  font-size: 40px;
   font-weight: 500;
+  font-size: 40px;
+  line-height: 1.1;
+  text-align: center;
   text-transform: uppercase;
-  line-height: 1;
+  inline-size: 100%;
+  white-space: nowrap;
 }
 
 .fits__firstname__personal {
   font-family: var(--font-fits);
   font-size: 50px;
   text-transform: capitalize;
-  text-shadow: 0px 6px 2px rgba(0,0,0,.6);
+  text-shadow: 0 6px 2px rgb(0 0 0 / 0.6);
 }
 
 .fits__card__ten::before {
-  content: '';
-  display: block;
+  content: "";
   position: absolute;
-  inline-size: 100%;
-  block-size: 50%;
   top: 0;
   left: 0;
-  background: linear-gradient(rgba(255,255,255,0)65%,rgba(255,255,255,1)90%);
   z-index: 1;
+  display: block;
+  background: linear-gradient(
+    rgb(255 255 255 / 0) 65%,
+    rgb(255 255 255 / 1) 90%
+  );
+  inline-size: 100%;
+  block-size: 50%;
 }
 
 .fits__card__ten::after {
-  content: '';
-  display: block;
+  content: "";
   position: absolute;
-  inline-size: 100%;
-  block-size: 50%;
   bottom: 0;
   left: 0;
-  background: linear-gradient(rgba(255,255,255,0)65%,rgba(255,255,255,1)90%);
   z-index: 1;
+  display: block;
+  background: linear-gradient(
+    rgb(255 255 255 / 0) 65%,
+    rgb(255 255 255 / 1) 90%
+  );
+  inline-size: 100%;
+  block-size: 50%;
 }
 
 .fits__groups {
   position: absolute;
-  z-index: 2;
   bottom: 0;
   left: 0;
+  z-index: 2;
+  display: grid;
+  align-items: end;
   inline-size: 100%;
   block-size: 100%;
-  display: grid;
   grid-template: repeat(2, auto) / repeat(5, 1fr);
-  align-items: end;
 }
 
 .fits__groups__names {
-  font-size: 21px;
-  font-weight: 800;
-  text-transform: uppercase;
-  text-align: center;
   display: flex;
   flex-direction: column;
+  font-weight: 800;
+  font-size: 21px;
   line-height: 1.1;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .footer {
-  inline-size: 952px;
   margin: 75px 0 50px 97px;
+  inline-size: 952px;
 }
 
 .footer__main {
   display: flex;
   justify-content: space-between;
-  padding-block-start: 26px;
   border-block-start: 1px solid var(--line-main-color);
+  padding-block-start: 26px;
 }
 
 .footer__navigation {
@@ -1608,26 +1620,26 @@ body {
 }
 
 .footer__title {
-  text-transform: uppercase;
   font-size: 14px;
   letter-spacing: -0.02em;
+  text-transform: uppercase;
 }
 
 .footer__navigation__link {
   display: flex;
   align-items: center;
   gap: 6px;
-  line-height: 15px;
-  font-size: 11px;
-  font-family: var(--font-link);
   color: var(--main-color);
+  font-family: var(--font-link);
+  font-size: 11px;
+  line-height: 15px;
 }
 
 .footer__navigation__logo {
-  inline-size: 20px;
-  block-size: 20px;
   object-fit: contain;
   object-position: center;
+  inline-size: 20px;
+  block-size: 20px;
 }
 
 .footer__text {
@@ -1640,28 +1652,28 @@ body {
 }
 
 .footer__copyright {
-  letter-spacing: 0.5px;
-  line-height: 15px;
-  color: var(--header-link);
-  font-size: 11px;
   padding-block-start: 5px;
+  color: var(--header-link);
   font-family: var(--font-table);
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.5px;
 }
 
 .social__media {
-  padding: 26px 0;
   display: flex;
-  inline-size: 392px;
   justify-content: space-between;
+  padding: 26px 0;
+  inline-size: 392px;
 }
 
 .social__media__logo {
-  inline-size: 22px;
-  block-size: 22px;
   object-fit: contain;
   object-position: center;
   filter: grayscale(1);
   transition: filter 0.3s;
+  inline-size: 22px;
+  block-size: 22px;
 }
 
 .social__media__link:hover .social__media__logo {
@@ -1681,15 +1693,15 @@ body {
 .footer__links__list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 13px;
   justify-content: end;
+  column-gap: 13px;
 }
 
 .footer__link {
-  font-size: 11px;
-  font-family: var(--font-table);
-  line-height: 2;
   color: var(--main-color);
+  font-family: var(--font-table);
+  font-size: 11px;
+  line-height: 2;
 }
 
 @media (max-width: 1279px) {
@@ -1699,13 +1711,13 @@ body {
   }
 
   .header {
-    inline-size: 930px;
-    padding: 26px 0;
-    margin: 0 auto;
+    top: -1px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    top: -1px;
+    margin: 0 auto;
+    padding: 26px 0;
+    inline-size: 930px;
   }
 
   .fox_sports_logo {
@@ -1723,14 +1735,14 @@ body {
   }
 
   .main {
-    inline-size: 930px;
     margin: 0 auto;
+    inline-size: 930px;
   }
 
   .main__color {
+    top: 83px;
     margin-block-start: 0;
     block-size: 533px;
-    top: 83px;
   }
 
   .menu {
@@ -1738,8 +1750,8 @@ body {
   }
 
   .menu__sticky {
-    padding: 0;
     top: 82px;
+    padding: 0;
   }
 
   .player__awards__photo {
@@ -1748,8 +1760,8 @@ body {
   }
 
   .footer {
-    inline-size: 930px;
     margin: 75px auto 50px;
+    inline-size: 930px;
   }
 
   .social__media {
@@ -1759,11 +1771,11 @@ body {
 
 @media (max-width: 1023px) {
   .header {
-    inline-size: 100%;
-    margin: 0;
-    background: var(--back-color);
-    padding: 26px 110px;
     grid-template-columns: 1fr 50px 1fr;
+    margin: 0;
+    padding: 26px 110px;
+    background: var(--back-color);
+    inline-size: 100%;
   }
 
   .fox_sports_logo,
@@ -1779,33 +1791,33 @@ body {
   }
 
   .main {
-    inline-size: 100%;
-    margin: 0;
-    display: block;
     position: relative;
+    display: block;
+    margin: 0;
+    inline-size: 100%;
   }
 
   .main::before {
-    display: block;
-    position: absolute;
     content: "";
-    inline-size: 100px;
-    block-size: 150px;
-    background: var(--back-color);
+    position: absolute;
     top: -90px;
     left: 42vw;
     z-index: 101;
+    display: block;
+    background: var(--back-color);
+    inline-size: 100px;
+    block-size: 150px;
   }
 
   .main__color {
-    inline-size: 100%;
-    block-size: auto;
-    padding: 60px 110px 50px;
+    position: relative;
+    top: 0;
     flex-direction: row;
     justify-content: space-between;
     border-radius: 0;
-    position: relative;
-    top: 0;
+    padding: 60px 110px 50px;
+    inline-size: 100%;
+    block-size: auto;
   }
 
   .main__logo {
@@ -1814,16 +1826,16 @@ body {
   }
 
   .main__title {
-    padding: 0 15px;
     margin-right: auto;
+    padding: 0 15px;
   }
 
   .main__button {
     margin: 0;
-    padding: 0;
-    background-color: transparent;
     border: none;
     border-radius: 0;
+    padding: 0;
+    background-color: transparent;
     inline-size: min-content;
     block-size: max-content;
   }
@@ -1855,27 +1867,28 @@ body {
   }
 
   .menu__sticky {
+    top: 91px;
     border-block-start: 1px solid #ffffff1a;
     background: var(--back-color);
-    top: 90px;
   }
 
   .menu_navigation {
     padding: 0 110px;
+    gap: 20px;
   }
 
   .menu__button {
-    color: var(--light-header);
     padding: 21px 0 24px;
-    font-size: 18px;
+    color: var(--light-header);
+    font-size: 23px;
     line-height: 20.01px;
   }
 
   .menu__button:hover,
   .menu__button:focus {
+    border-block-end: 2px solid var(--light-color);
     padding: 21px 0 22px;
     color: var(--light-color);
-    border-block-end: 2px solid var(--light-color);
   }
 
   .standings,
@@ -1904,17 +1917,17 @@ body {
   }
 
   .western__conference {
+    grid-template-columns: auto 1fr 1fr auto 0.5fr auto;
     margin-inline-start: -10px;
     padding: 0 0 0 10px;
-    grid-template-columns: auto 1fr 1fr auto 0.5fr auto;
   }
 
   .eastern__conference {
     grid-template-columns: auto 1fr 1fr auto 0.5fr auto;
     grid-auto-flow: dense;
-    direction: rtl;
     margin-inline-start: -10px;
     padding: 0 10px 0 0;
+    direction: rtl;
   }
 
   .conference__finals__up::after,
@@ -1927,11 +1940,11 @@ body {
   }
 
   .final {
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
     top: -10px;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
     background: transparent;
   }
 
@@ -1950,8 +1963,8 @@ body {
   }
 
   .eastern__conference .conference__logo {
-    left: 100%;
     right: auto;
+    left: 100%;
   }
 
   .eastern__conference .team {
@@ -1959,9 +1972,9 @@ body {
   }
 
   .eastern__conference .table_lines span {
+    border-top-left-radius: 5px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
   }
 
@@ -2048,8 +2061,9 @@ body {
   }
 
   .menu_navigation {
+    padding: 0 25px;
+    gap: 25px;
     background: var(--back-color);
-    padding: 0 10px;
   }
 
   .standings__table td:nth-child(1n + 7),
@@ -2074,17 +2088,17 @@ body {
   }
 
   .western__conference {
+    grid-template-columns: auto 1fr 1fr auto 1fr auto;
     margin-inline-start: 45px;
     padding: 0 5px 0 10px;
-    grid-template-columns: auto 1fr 1fr auto 1fr auto;
   }
 
   .eastern__conference {
     grid-template-columns: auto 1fr 1fr auto 1fr auto;
     grid-auto-flow: dense;
-    direction: ltr;
     margin-inline-start: 45px;
     padding: 0 5px 0 10px;
+    direction: ltr;
   }
 
   .conference__finals__up::after,
@@ -2097,11 +2111,11 @@ body {
   }
 
   .final {
-    margin-left: 0;
-    margin-right: 0;
-    left: auto;
-    right: 0;
     top: 41%;
+    right: 0;
+    left: auto;
+    margin-right: 0;
+    margin-left: 0;
     background: var(--light-color);
   }
 
@@ -2111,13 +2125,13 @@ body {
 
   .eastern__conference::before,
   .eastern__conference::after {
-    left: -5px;
     right: auto;
+    left: -5px;
   }
 
   .eastern__conference .team__wins {
-    margin-inline-end: 4px;
     margin-inline-start: 0;
+    margin-inline-end: 4px;
   }
 
   .eastern__conference .conference__logo {
@@ -2130,9 +2144,9 @@ body {
   }
 
   .eastern__conference .table_lines span {
+    border-top-left-radius: 0;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
 
@@ -2174,21 +2188,21 @@ body {
   }
 
   .player__stats__card {
-    inline-size: 100%;
-    padding: 25px 25px 35px;
     margin: 0;
+    padding: 25px 25px 35px;
+    inline-size: 100%;
   }
 
   .player__stats .player__stats__card:not(:nth-child(1n + 12))::after,
   .team__stats .player__stats__card:not(:nth-child(1n + 10))::after,
   .player__awards__card:not(:nth-child(1n + 7))::after {
-    position: absolute;
     content: "";
-    inline-size: 100%;
-    display: block;
-    left: 0;
+    position: absolute;
     bottom: 0;
+    left: 0;
+    display: block;
     border-block-end: 1px solid var(--line-main-color);
+    inline-size: 100%;
   }
 
   .stats__card__main {
@@ -2197,14 +2211,14 @@ body {
   }
 
   .stats__card__main::after {
-    position: absolute;
     content: "";
-    display: block;
-    inline-size: 16px;
-    block-size: 16px;
-    background: url("https://svgshare.com/i/16Uz.svg") center/contain no-repeat;
+    position: absolute;
     top: 30%;
     right: 0;
+    display: block;
+    background: url("https://svgshare.com/i/16Uz.svg") center/contain no-repeat;
+    inline-size: 16px;
+    block-size: 16px;
   }
 
   .stats__card__photo {
@@ -2233,9 +2247,9 @@ body {
   }
 
   .double__photo {
+    transform: translateY(-15px) rotate(45deg);
     inline-size: 60px;
     block-size: 60px;
-    transform: translateY(-15px) rotate(45deg);
   }
 
   .awards,
@@ -2250,8 +2264,8 @@ body {
 
   .player__awards__card {
     position: relative;
-    padding: 20px 0;
     margin: 0;
+    padding: 20px 0;
   }
 
   .player__awards__photo {
@@ -2265,16 +2279,16 @@ body {
 
   .player__awards__stats {
     display: flex;
-    gap: 10px;
     justify-content: start;
+    gap: 10px;
   }
 
   .all__team__player {
     display: grid;
     grid-template-columns: auto 2fr 1fr;
+    margin-inline-start: -25px;
     padding: 20px 0 20px 25px;
     inline-size: calc(100% + 50px);
-    margin-inline-start: -25px;
   }
 
   .all__team__club {
@@ -2294,8 +2308,8 @@ body {
   }
 
   .fits__card {
-    inline-size: calc(100% + 50px);
     margin-inline-start: -25px;
+    inline-size: calc(100% + 50px);
   }
 
   .fits__name,
@@ -2325,8 +2339,8 @@ body {
   }
 
   .social__media {
-    inline-size: 100%;
     border-top: 1px solid var(--line-main-color);
+    inline-size: 100%;
   }
 
   .footer__links {
