@@ -7,20 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NBA Stats, Standings, Leaders & Playoff</title>
     <link rel="stylesheet" href="/bundle.css" />
-    <link
-      rel="icon"
-      href="./images/fox-logo-black.ico"
-      sizes="any"
-    />
-    <link
-      rel="icon"
-      href="./images/fox-logo-black.svg"
-      type="image/svg+xml"
-    />
-    <link
-      rel="apple-touch-icon"
-      href="./images/fox-logo-black.png"
-    />
+    <link rel="icon" href="./images/fox-logo-black.ico" sizes="any" />
+    <link rel="icon" href="./images/fox-logo-black.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/fox-logo-black.png" />
     <meta
       property="og:title"
       content="NBA Stats, Standings, Leaders &amp; Playoff"
@@ -36,7 +25,7 @@
     />
     <meta name="twitter:card" content="summary_large_image" />
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:wght@100..900&family=Schibsted+Grotesk:wght@400..900&display=swap");
+      @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:wght@100..900&family=Schibsted+Grotesk:wght@400..900&family=Niconne&display=swap');
     </style>
   </head>
 
@@ -156,26 +145,16 @@
       </section>
       <section class="menu">
         <nav class="menu__sticky">
-          <ul class="menu_navigation">
-            <li>
-              <label for="stats"><a class="menu__button">Stats</a></label>
-            </li>
-            <li>
-              <label for="standings"
-                ><a class="menu__button">Standings</a></label
-              >
-            </li>
-            <li>
-              <label for="awards"><a class="menu__button">Awards</a></label>
-            </li>
-            <li>
-              <label for="playoffs"><a class="menu__button">Playoffs</a></label>
-            </li>
-            <li>
-              <label for="start5"><a class="menu__button">Start5</a></label>
-            </li>
-          </ul>
-        </nav>
+        <ul class="menu_navigation">
+          <li><button class="menu__button"><label for="stats">Stats</label></button></li>
+          <li><button class="menu__button"><label for="standings">Standings</label></button></li>
+          <li><button class="menu__button"><label for="awards">Awards</label></button></li>
+          <li><button class="menu__button"><label for="fits">Fits</label></button></li>
+          <li><button class="menu__button"><label for="playoffs">Playoffs</label></button></li>
+          <li><button class="menu__button"><label for="start5">Starting 5's</label></button></li>
+          <li><button class="menu__button"><label for="draft">Draft</label></button></li>
+        </ul>
+      </nav>
         <div>
           <input class="input" id="standings" type="radio" name="menu" />
           <div class="standings chapter">
@@ -5230,6 +5209,91 @@
             </details>
           </div>
         </div>
+        <div>
+        <input class="input" id="fits" type="radio" name="menu"  checked/>
+        <div class="fits chapter">
+          <h2 class="fits__title">2023-24 All-LeagueFits Awards</h2>
+          <div class="fits__author">
+          <p>by</p>
+          <a class="fits__link" href="https://www.slamonline.com/leaguefits/2023-24-all-leaguefits-awards-full-list/" target="_blank"><img class="fits__link__logo" src="	https://i.postimg.cc/cHXDQfBM/ab2f81f0-f704-11ec-bf2b-e93971fa55b1-SLAMLogo2021-orange.png" alt="Логотип Slam"/></a>
+          </div>
+          <h3>FIRST TEAM</h3>
+          <article class="fits__card">
+            <img class="fits__team" src="https://i.postimg.cc/fTpdc0Zm/e8b9ce4581714f5dabe14abaa2d2fb54p-D5-Qq49a-MIMTjy-OS-3.jpg" alt="Первая пятерка баскетболистов в данной номинации"/>
+            <div class="fits__names">
+              <p class="fits__name"><span class="fits__firstname">bol</span>bol,</p>
+               <p class="fits__name"><span class="fits__firstname">shai</span>Gilgeous-Alexander,</p>
+               <p class="fits__name"><span class="fits__firstname">jalen</span>williams,</p>
+              <p class="fits__name"><span class="fits__firstname">jordan</span>clarckson,</p>
+              <p class="fits__name"><span class="fits__firstname">Nickeil</span>Alexander-Walker</p>
+            </div>
+          </article>
+          <h3>SECOND TEAM</h3>
+          <article class="fits__card">
+            <img class="fits__team" src="https://i.postimg.cc/52zCnNNG/e8b9ce4581714f5dabe14abaa2d2fb54p-D5-Qq49a-MIMTjy-OS-0.jpg" alt="Вторая пятерка баскетболистов в данной номинации"/>
+            <div class="fits__names">
+              <p class="fits__name"><span class="fits__firstname">jordan</span>poole,</p>
+               <p class="fits__name"><span class="fits__firstname">russell</span>westbrook,</p>
+               <p class="fits__name"><span class="fits__firstname">devin</span>booker,</p>
+              <p class="fits__name"><span class="fits__firstname">tyrese</span>haliburton,</p>
+              <p class="fits__name"><span class="fits__firstname">lebron</span>james</p>
+            </div>
+          </article>
+          <h3>THIRD TEAM</h3>
+          <article class="fits__card">
+            <img class="fits__team" src="https://i.postimg.cc/rFKWR96q/e8b9ce4581714f5dabe14abaa2d2fb54p-D5-Qq49a-MIMTjy-OS-2.jpg" alt="Третья пятерка баскетболистов в данной номинации"/>
+            <div class="fits__names">
+              <p class="fits__name"><span class="fits__firstname">lu</span>dort,</p>
+               <p class="fits__name"><span class="fits__firstname">kelly</span>oubre,</p>
+               <p class="fits__name"><span class="fits__firstname">jarred</span>vanderbilt,</p>
+              <p class="fits__name"><span class="fits__firstname">jerami</span>grant,</p>
+              <p class="fits__name"><span class="fits__firstname">D'Angelo</span>russell</p>
+            </div>
+          </article>
+          <h3>ROOKIE TEAM</h3>
+          <article class="fits__card">
+            <img class="fits__team" src="https://i.postimg.cc/yNzS54DN/e8b9ce4581714f5dabe14abaa2d2fb54p-D5-Qq49a-MIMTjy-OS-1.jpg" alt="Пятерка новичков баскетболистов в данной номинации"/>
+            <div class="fits__names">
+              <p class="fits__name"><span class="fits__firstname">brice</span>sensabaugh,</p>
+               <p class="fits__name"><span class="fits__firstname">scoot</span>henderson,</p>
+               <p class="fits__name"><span class="fits__firstname">victor</span>webmanyama,</p>
+              <p class="fits__name"><span class="fits__firstname">jaime</span>jaquez jr.,</p>
+              <p class="fits__name"><span class="fits__firstname">amari</span>bailey</p>
+            </div>
+          </article>
+          <h3>MOST VALUABLE PLAYER</h3>
+          <article class="fits__card__personal">
+            <img class="fits__team" src="https://i.postimg.cc/kM1MTqmq/shai-1.jpg" alt="Коллаж из фотографий Шай Гилджес-Александра"/>
+              <p class="fits__name__personal"><span class="fits__firstname__personal">Shai</span>gilgeous-alexander</p>
+          </article>
+          <h3>ROOKIE OF THE YEAR</h3>
+          <article class="fits__card__personal">
+            <img class="fits__team" src="https://i.postimg.cc/XqQr8Cgb/webma-1.jpg" alt="Коллаж из фотографий Виктора Вембаньямы"/>
+              <p class="fits__name__personal"><span class="fits__firstname__personal">Victor</span>Wembanyama</p>
+          </article>
+          <h3>MOST IMPROVED PLAYER</h3>
+          <article class="fits__card__personal">
+            <img class="fits__team" src="https://i.postimg.cc/Ssg2JnDX/e8b9ce4581714f5dabe14abaa2d2fb54p-D5-Qq49a-MIMTjy-OS-6.jpg" alt="Коллаж из фотографий Альперена Шенгюна"/>
+              <p class="fits__name__personal"><span class="fits__firstname__personal">alperen</span>Şengün</p>
+          </article>
+          <h3>HONORABLE MENTIONS</h3>
+          <article class="fits__card__ten">
+            <img class="fits__team" src="https://i.postimg.cc/qBmsMxBx/ppt-E6-FC-pptm-2-1.jpg" alt="Пятерка новичков баскетболистов в данной номинации"/>
+            <div class="fits__groups">
+              <p class="fits__groups__names"><span>kyrie</span>irving</p>
+               <p class="fits__groups__names"><span>kyle</span>kuzma</p>
+               <p class="fits__groups__names"><span>karl-anthony</span>towns</p>
+              <p class="fits__groups__names"><span>jayson</span>tatum</p>
+              <p class="fits__groups__names"><span>jeremy</span>sochan</p>
+              <p class="fits__groups__names"><span>terry</span>rozier</p>
+               <p class="fits__groups__names"><span>alperen</span>sengun</p>
+               <p class="fits__groups__names"><span>thanasis</span>antetokounmpo</p>
+              <p class="fits__groups__names"><span>pj</span>tucker</p>
+              <p class="fits__groups__names"><span>terance</span>mann</p>
+            </div>
+          </article>
+        </div>
+      </div>
       </section>
     </main>
     <footer class="footer">

@@ -371,9 +371,15 @@ body {
 
 .menu_navigation {
   display: flex;
-  overflow: hidden;
+  flex-wrap: nowrap;
+  overflow-x: auto;
   justify-content: space-between;
   border-block-end: 1px solid var(--line-main-color);
+}
+
+.menu_navigation::-webkit-scrollbar {
+  width: 0;
+  display: none;
 }
 
 .menu__button {
@@ -387,6 +393,9 @@ body {
   text-transform: uppercase;
   font-weight: 450;
   letter-spacing: -0.02em;
+  border: none;
+  background: transparent;
+  white-space: nowrap;
   transition: color 0.25s ease;
 }
 
@@ -395,6 +404,10 @@ body {
   padding: 0 0 22px;
   color: var(--main-color);
   border-block-end: 2px solid var(--main-color);
+}
+
+.menu__button label {
+  cursor: pointer;
 }
 
 .input,
@@ -1416,6 +1429,166 @@ body {
   text-align: end;
 }
 
+.fits__title {
+  padding-block-start: 30px;
+  font-size: 30px;
+  font-weight: 450;
+  letter-spacing: -0.02em;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.fits__author {
+  margin: 15px 0 40px;
+  display: flex;
+  align-items: end;
+  gap: 10px;
+}
+
+.fits__link__logo {
+  inline-size: 95px;
+}
+
+.fits h3 {
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  padding-block-end: 20px;
+}
+
+.fits__card,
+.fits__card__ten,
+.fits__card__personal {
+  position: relative;
+  inline-size: 100%;
+  border: 1px solid tomato;
+}
+
+.fits__card::before {
+  content: '';
+  display: block;
+  position: absolute;
+  inline-size: 100%;
+  block-size: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgba(255,255,255,0) 55%,rgba(255,255,255,0.7) 80%, rgba(255,255,255,1) 90%);
+  z-index: 1;
+}
+
+.fits__team {
+  inline-size: 100%;
+  border: 1px solid lime;
+}
+
+.fits__names {
+  position: absolute;
+  z-index: 2;
+  bottom: 5%;
+  left: 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+.fits__name {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  white-space: nowrap;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.fits__firstname {
+  font-family: var(--font-fits);
+  font-size: 30px;
+}
+
+.fits__card__personal::before {
+  content: '';
+  display: block;
+  position: absolute;
+  inline-size: 100%;
+  block-size: 100%;
+  top: bottom;
+  left: 0;
+  background: linear-gradient(rgba(255,255,255,0) 70%,rgba(255,255,255,1)95%);
+  z-index: 1;
+}
+
+.fits__name__personal {
+  position: absolute;
+  z-index: 2;
+  bottom: 7%;
+  left: 0;
+  inline-size: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  font-size: 40px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.fits__firstname__personal {
+  font-family: var(--font-fits);
+  font-size: 50px;
+  text-transform: capitalize;
+  text-shadow: 0px 6px 2px rgba(0,0,0,.6);
+}
+
+.fits__card__ten::before {
+  content: '';
+  display: block;
+  position: absolute;
+  inline-size: 100%;
+  block-size: 50%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgba(255,255,255,0)65%,rgba(255,255,255,1)90%);
+  z-index: 1;
+}
+
+.fits__card__ten::after {
+  content: '';
+  display: block;
+  position: absolute;
+  inline-size: 100%;
+  block-size: 50%;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(rgba(255,255,255,0)65%,rgba(255,255,255,1)90%);
+  z-index: 1;
+}
+
+.fits__groups {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
+  inline-size: 100%;
+  block-size: 100%;
+  display: grid;
+  grid-template: repeat(2, auto) / repeat(5, 1fr);
+  align-items: end;
+}
+
+.fits__groups__names {
+  font-size: 21px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
 .footer {
   inline-size: 952px;
   margin: 75px 0 50px 97px;
@@ -1825,7 +1998,8 @@ body {
     transform: translateX(0);
   }
 
-  .awards {
+  .awards,
+  .fits {
     margin: 0 110px;
   }
 
@@ -2064,7 +2238,8 @@ body {
     transform: translateY(-15px) rotate(45deg);
   }
 
-  .awards {
+  .awards,
+  .fits {
     margin: 0 25px;
   }
 
@@ -2116,6 +2291,28 @@ body {
 
   .team__start__logo {
     inline-size: 30px;
+  }
+
+  .fits__card {
+    inline-size: calc(100% + 50px);
+    margin-inline-start: -25px;
+  }
+
+  .fits__name,
+  .fits__groups__names {
+    font-size: 16px;
+  }
+
+  .fits__firstname {
+    font-size: 24px;
+  }
+
+  .fits__name__personal {
+    font-size: 30px;
+  }
+
+  .fits__firstname__personal {
+    font-size: 38px;
   }
 
   .footer {
