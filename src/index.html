@@ -159,7 +159,7 @@
             </li>
             <li>
               <button class="menu__button">
-                <label for="fits">Fits</label>
+                <label for="fits">Style</label>
               </button>
             </li>
             <li>
@@ -4751,177 +4751,402 @@
         <div>
           <input class="input" id="fits" type="radio" name="menu" />
           <div class="fits chapter">
-            <h2 class="fits__title">2023-24 All-LeagueFits Awards</h2>
-            <div class="fits__author">
-              <p>by</p>
-              <a
-                class="fits__link"
-                href="https://www.slamonline.com/leaguefits/2023-24-all-leaguefits-awards-full-list/"
-                target="_blank"
-                ><img
-                  class="fits__link__logo"
-                  src="	https://i.postimg.cc/cHXDQfBM/ab2f81f0-f704-11ec-bf2b-e93971fa55b1-SLAMLogo2021-orange.png"
-                  alt="Логотип Slam"
-              /></a>
+            <nav class="awards__navigation">
+              <ul class="awards__list">
+                <li>
+                  <button class="stats__button">
+                    <label class="fits__button" for="slam"
+                      >by<img
+                        class="fits__link__logo"
+                        src="	https://i.postimg.cc/cHXDQfBM/ab2f81f0-f704-11ec-bf2b-e93971fa55b1-SLAMLogo2021-orange.png"
+                        alt="Логотип Slam"
+                    /></label>
+                  </button>
+                </li>
+                <li>
+                  <button class="stats__button">
+                    <label class="fits__button" for="gq-sports"
+                      >by<img
+                        class="fits__link__logo"
+                        src="	https://i.postimg.cc/ydm6RLYv/14754552286-1-1.png"
+                        alt="Логотип gq sports"
+                    /></label>
+                  </button>
+                </li>
+              </ul>
+            </nav>
+            <div>
+              <input class="input" id="slam" type="radio" name="fits" />
+              <div class="chapter">
+                <h2 class="fits__title">2023-24 All-LeagueFits Awards</h2>
+                <h3>FIRST TEAM</h3>
+                <article class="fits__card">
+                  <img
+                    class="fits__team"
+                    src="https://i.postimg.cc/mkv3mt9X/1-3.jpg"
+                    alt="Первая пятерка баскетболистов в данной номинации"
+                  />
+                  <div class="fits__names">
+                    <p class="fits__name">
+                      <span class="fits__firstname">bol</span>bol,
+                    </p>
+                    <p class="fits__name">
+                      <span class="fits__firstname">shai</span
+                      >Gilgeous-Alexander,
+                    </p>
+                    <p class="fits__name">
+                      <span class="fits__firstname">jalen</span>williams,
+                    </p>
+                    <p class="fits__name">
+                      <span class="fits__firstname">jordan</span>clarckson,
+                    </p>
+                    <p class="fits__name">
+                      <span class="fits__firstname">Nickeil</span
+                      >Alexander-Walker
+                    </p>
+                  </div>
+                </article>
+                <h3>SECOND TEAM</h3>
+                <article class="fits__card">
+                  <img
+                    class="fits__team"
+                    src="https://i.postimg.cc/Gm1V2pfx/1-8.jpg"
+                    alt="Вторая пятерка баскетболистов в данной номинации"
+                  />
+                  <div class="fits__names">
+                    <p class="fits__name">
+                      <span class="fits__firstname">jordan</span>poole,
+                    </p>
+                    <p class="fits__name">
+                      <span class="fits__firstname">russell</span>westbrook,
+                    </p>
+                    <p class="fits__name">
+                      <span class="fits__firstname">devin</span>booker,
+                    </p>
+                    <p class="fits__name">
+                      <span class="fits__firstname">tyrese</span>haliburton,
+                    </p>
+                    <p class="fits__name">
+                      <span class="fits__firstname">lebron</span>james
+                    </p>
+                  </div>
+                </article>
+                <h3>THIRD TEAM</h3>
+                <article class="fits__card">
+                  <img
+                    class="fits__team"
+                    src="https://i.postimg.cc/MZNgC5b4/1-2.jpg"
+                    alt="Третья пятерка баскетболистов в данной номинации"
+                  />
+                  <div class="fits__names">
+                    <p class="fits__name">
+                      <span class="fits__firstname">lu</span>dort,
+                    </p>
+                    <p class="fits__name">
+                      <span class="fits__firstname">kelly</span>oubre,
+                    </p>
+                    <p class="fits__name">
+                      <span class="fits__firstname">jarred</span>vanderbilt,
+                    </p>
+                    <p class="fits__name">
+                      <span class="fits__firstname">jerami</span>grant,
+                    </p>
+                    <p class="fits__name">
+                      <span class="fits__firstname">D'Angelo</span>russell
+                    </p>
+                  </div>
+                </article>
+                <h3>ROOKIE TEAM</h3>
+                <article class="fits__card">
+                  <img
+                    class="fits__team"
+                    src="https://i.postimg.cc/pVpgc48z/1-1.jpg"
+                    alt="Пятерка новичков баскетболистов в данной номинации"
+                  />
+                  <div class="fits__names">
+                    <p class="fits__name">
+                      <span class="fits__firstname">brice</span>sensabaugh,
+                    </p>
+                    <p class="fits__name">
+                      <span class="fits__firstname">scoot</span>henderson,
+                    </p>
+                    <p class="fits__name">
+                      <span class="fits__firstname">victor</span>webmanyama,
+                    </p>
+                    <p class="fits__name">
+                      <span class="fits__firstname">jaime</span>jaquez jr.,
+                    </p>
+                    <p class="fits__name">
+                      <span class="fits__firstname">amari</span>bailey
+                    </p>
+                  </div>
+                </article>
+                <h3>MOST VALUABLE PLAYER</h3>
+                <article class="fits__card">
+                  <img
+                    class="fits__team"
+                    src="https://i.postimg.cc/G3Gjpjn6/2-1.jpg"
+                    alt="Коллаж из фотографий Шай Гилджес-Александра"
+                  />
+                  <p class="fits__name__personal">
+                    <span class="fits__firstname__personal">Shai</span
+                    >gilgeous-alexander
+                  </p>
+                </article>
+                <h3>ROOKIE OF THE YEAR</h3>
+                <article class="fits__card">
+                  <img
+                    class="fits__team"
+                    src="https://i.postimg.cc/CL4HGL1N/2-4.jpg"
+                    alt="Коллаж из фотографий Виктора Вембаньямы"
+                  />
+                  <p class="fits__name__personal">
+                    <span class="fits__firstname__personal">Victor</span
+                    >Wembanyama
+                  </p>
+                </article>
+                <h3>MOST IMPROVED PLAYER</h3>
+                <article class="fits__card">
+                  <img
+                    class="fits__team"
+                    src="https://i.postimg.cc/P5rb2svk/2-3.jpg"
+                    alt="Коллаж из фотографий Альперена Шенгюна"
+                  />
+                  <p class="fits__name__personal">
+                    <span class="fits__firstname__personal">alperen</span>Şengün
+                  </p>
+                </article>
+                <h3>HONORABLE MENTIONS</h3>
+                <article class="fits__card">
+                  <img
+                    class="fits__team"
+                    src="https://i.postimg.cc/5NJSQFxy/2-2.jpg"
+                    alt="Пятерка новичков баскетболистов в данной номинации"
+                  />
+                  <div class="fits__groups">
+                    <p class="fits__groups__names"><span>kyrie</span>irving</p>
+                    <p class="fits__groups__names"><span>kyle</span>kuzma</p>
+                    <p class="fits__groups__names">
+                      <span>karl-anthony</span>towns
+                    </p>
+                    <p class="fits__groups__names"><span>jayson</span>tatum</p>
+                    <p class="fits__groups__names"><span>jeremy</span>sochan</p>
+                    <p class="fits__groups__names"><span>terry</span>rozier</p>
+                    <p class="fits__groups__names">
+                      <span>alperen</span>sengun
+                    </p>
+                    <p class="fits__groups__names">
+                      <span>thanasis</span>antetokounmpo
+                    </p>
+                    <p class="fits__groups__names"><span>pj</span>tucker</p>
+                    <p class="fits__groups__names"><span>terance</span>mann</p>
+                  </div>
+                </article>
+              </div>
             </div>
-            <h3>FIRST TEAM</h3>
-            <article class="fits__card">
-              <img
-                class="fits__team"
-                src="https://i.postimg.cc/mkv3mt9X/1-3.jpg"
-                alt="Первая пятерка баскетболистов в данной номинации"
+            <div>
+              <input
+                class="input"
+                id="gq-sports"
+                type="radio"
+                name="fits"
+                checked
               />
-              <div class="fits__names">
-                <p class="fits__name">
-                  <span class="fits__firstname">bol</span>bol,
-                </p>
-                <p class="fits__name">
-                  <span class="fits__firstname">shai</span>Gilgeous-Alexander,
-                </p>
-                <p class="fits__name">
-                  <span class="fits__firstname">jalen</span>williams,
-                </p>
-                <p class="fits__name">
-                  <span class="fits__firstname">jordan</span>clarckson,
-                </p>
-                <p class="fits__name">
-                  <span class="fits__firstname">Nickeil</span>Alexander-Walker
-                </p>
+              <div class="chapter">
+                <h2 class="fits__title">2023-24 most stylish nba player</h2>
+                <div class="fits__playoff">
+                  <div class="fits__playoff__half">
+                    <div class="fits__round_of_16">
+                      <article class="fits__couple">
+                        <p class="fits__couple__name_win">
+                          Shai Gilgeous-Alexander
+                        </p>
+                        <img
+                          class="fits__couple__player"
+                          src="https://i.postimg.cc/MK5LjQk7/gq-sport1.png"
+                          alt="Shai Gilgeous-Alexander и PJ Tucker"
+                        />
+                        <p class="fits__couple__name_down">PJ Tucker</p>
+                      </article>
+                      <article class="fits__couple">
+                        <p class="fits__couple__name_win">Jayson Tatum</p>
+                        <img
+                          class="fits__couple__player"
+                          src="https://i.postimg.cc/28rJ6xtj/gq-sport2.png"
+                          alt="Jayson Tatum и Tyrese Haliburton"
+                        />
+                        <p class="fits__couple__name_down">Tyrese Haliburton</p>
+                      </article>
+                      <article class="fits__couple">
+                        <p class="fits__couple__name_win">Devin Booker</p>
+                        <img
+                          class="fits__couple__player"
+                          src="https://i.postimg.cc/NG1SBnpP/gq-sport3.png"
+                          alt="Devin Booker и Kyrie Irving"
+                        />
+                        <p class="fits__couple__name_down">Kyrie Irving</p>
+                      </article>
+                      <article class="fits__couple">
+                        <p class="fits__couple__name_win">Jordan Clarckson</p>
+                        <img
+                          class="fits__couple__player"
+                          src="https://i.postimg.cc/HkLh0kHf/gq-sport4.png"
+                          alt="Jordan Clarckson и Jarred Vanderbilt"
+                        />
+                        <p class="fits__couple__name_down">Jarred Vanderbilt</p>
+                      </article>
+                    </div>
+                    <div class="fits__round_of_16_after">
+                      <span></span>
+                      <span></span>
+                    </div>
+                    <span class="fits__round_of_8_before"></span>
+                    <div class="fits__round_of_8">
+                      <article class="fits__couple">
+                        <p class="fits__couple__name_win">
+                          Shai Gilgeous-Alexander
+                        </p>
+                        <img
+                          class="fits__couple__player"
+                          src="https://i.postimg.cc/sg00TCg1/gq-sport5.png"
+                          alt="Shai Gilgeous-Alexander и Jayson Tatum"
+                        />
+                        <p class="fits__couple__name_down">Jayson Tatum</p>
+                      </article>
+                      <article class="fits__couple">
+                        <p class="fits__couple__name_win">Devin Booker</p>
+                        <img
+                          class="fits__couple__player"
+                          src="https://i.postimg.cc/0Q7W56dJ/gq-sport6.png"
+                          alt="Devin Booker и Tyrese Haliburton"
+                        />
+                        <p class="fits__couple__name_down">Jordan Clarckson</p>
+                      </article>
+                    </div>
+                    <span class="fits__round_of_8_after"></span>
+                    <span class="fits__round_of_4_before"></span>
+                    <div class="fits__round_of_4">
+                      <article class="fits__couple">
+                        <p class="fits__couple__name_win">
+                          Shai Gilgeous-Alexander
+                        </p>
+                        <img
+                          class="fits__couple__player"
+                          src="https://i.postimg.cc/MGC380RS/gq-sport7.png"
+                          alt="Shai Gilgeous-Alexander и Devin Booker"
+                        />
+                        <p class="fits__couple__name_down">Devin Booker</p>
+                      </article>
+                    </div>
+                  </div>
+                  <div class="fits__playoff__half">
+                    <div class="fits__round_of_16">
+                      <article class="fits__couple">
+                        <p class="fits__couple__name_win">Lebron James</p>
+                        <img
+                          class="fits__couple__player"
+                          src="https://i.postimg.cc/XvG1h1rL/gq-sport8.png"
+                          alt="Lebron James и Alperen Sengun"
+                        />
+                        <p class="fits__couple__name_down">Alperen Sengun</p>
+                      </article>
+                      <article class="fits__couple">
+                        <p>Jerami Grant</p>
+                        <img
+                          class="fits__couple__player"
+                          src="https://i.postimg.cc/vTMP4Q32/gq-sport9.png"
+                          alt="Jerami Grant и Luguentz Dort"
+                        />
+                        <p
+                          class="fits__couple__name_down fits__couple__name_win"
+                        >
+                          Luguentz Dort
+                        </p>
+                      </article>
+                      <article class="fits__couple">
+                        <p>Jalen Williams</p>
+                        <img
+                          class="fits__couple__player"
+                          src="https://i.postimg.cc/zvjxW9Qz/gq-sport10.png"
+                          alt="Jalen Williams и Malik Monk"
+                        />
+                        <p
+                          class="fits__couple__name_down fits__couple__name_win"
+                        >
+                          Malik Monk
+                        </p>
+                      </article>
+                      <article class="fits__couple">
+                        <p>Kyle Kuzma</p>
+                        <img
+                          class="fits__couple__player"
+                          src="https://i.postimg.cc/mZNX0Hgv/gq-sport11.png"
+                          alt="Kyle Kuzma и Russell Westbrook"
+                        />
+                        <p
+                          class="fits__couple__name_down fits__couple__name_win"
+                        >
+                          Russell Westbrook
+                        </p>
+                      </article>
+                    </div>
+                    <div class="fits__round_of_16_after">
+                      <span></span>
+                      <span></span>
+                    </div>
+                    <span class="fits__round_of_8_before"></span>
+                    <div class="fits__round_of_8">
+                      <article class="fits__couple">
+                        <p class="fits__couple__name_win">Lebron James</p>
+                        <img
+                          class="fits__couple__player"
+                          src="https://i.postimg.cc/4NfLZxKm/gq-sport12.png"
+                          alt="Lebron James и Luguentz Dort"
+                        />
+                        <p class="fits__couple__name_down">Luguentz Dort</p>
+                      </article>
+                      <article class="fits__couple">
+                        <p class="fits__couple__name_win">Malik Monk</p>
+                        <img
+                          class="fits__couple__player"
+                          src="https://i.postimg.cc/nc3dLf7T/gq-sport13.png"
+                          alt="Malik Monk и Russell Westbrook"
+                        />
+                        <p class="fits__couple__name_down">Russell Westbrook</p>
+                      </article>
+                    </div>
+                    <span class="fits__round_of_8_after"></span>
+                    <span class="fits__round_of_4_before"></span>
+                    <div class="fits__round_of_4">
+                      <article class="fits__couple">
+                        <p>Lebron James</p>
+                        <img
+                          class="fits__couple__player"
+                          src="https://i.postimg.cc/jS9Zz6M7/gq-sport14.png"
+                          alt="Lebron James и Malik Monk"
+                        />
+                        <p
+                          class="fits__couple__name_down fits__couple__name_win"
+                        >
+                          Malik Monk
+                        </p>
+                      </article>
+                    </div>
+                  </div>
+                  <div class="fits__playoff__final">
+                    <article class="fits__couple">
+                      <p>Shai Gilgeous-Alexander</p>
+                      <img
+                        class="fits__couple__player"
+                        src="https://i.postimg.cc/mghmzpy4/gq-sport15.png"
+                        alt="Shai Gilgeous-Alexander и Malik Monk"
+                      />
+                      <p class="fits__couple__name_winner">Malik Monk</p>
+                    </article>
+                  </div>
+                </div>
               </div>
-            </article>
-            <h3>SECOND TEAM</h3>
-            <article class="fits__card">
-              <img
-                class="fits__team"
-                src="https://i.postimg.cc/Gm1V2pfx/1-8.jpg"
-                alt="Вторая пятерка баскетболистов в данной номинации"
-              />
-              <div class="fits__names">
-                <p class="fits__name">
-                  <span class="fits__firstname">jordan</span>poole,
-                </p>
-                <p class="fits__name">
-                  <span class="fits__firstname">russell</span>westbrook,
-                </p>
-                <p class="fits__name">
-                  <span class="fits__firstname">devin</span>booker,
-                </p>
-                <p class="fits__name">
-                  <span class="fits__firstname">tyrese</span>haliburton,
-                </p>
-                <p class="fits__name">
-                  <span class="fits__firstname">lebron</span>james
-                </p>
-              </div>
-            </article>
-            <h3>THIRD TEAM</h3>
-            <article class="fits__card">
-              <img
-                class="fits__team"
-                src="https://i.postimg.cc/MZNgC5b4/1-2.jpg"
-                alt="Третья пятерка баскетболистов в данной номинации"
-              />
-              <div class="fits__names">
-                <p class="fits__name">
-                  <span class="fits__firstname">lu</span>dort,
-                </p>
-                <p class="fits__name">
-                  <span class="fits__firstname">kelly</span>oubre,
-                </p>
-                <p class="fits__name">
-                  <span class="fits__firstname">jarred</span>vanderbilt,
-                </p>
-                <p class="fits__name">
-                  <span class="fits__firstname">jerami</span>grant,
-                </p>
-                <p class="fits__name">
-                  <span class="fits__firstname">D'Angelo</span>russell
-                </p>
-              </div>
-            </article>
-            <h3>ROOKIE TEAM</h3>
-            <article class="fits__card">
-              <img
-                class="fits__team"
-                src="https://i.postimg.cc/pVpgc48z/1-1.jpg"
-                alt="Пятерка новичков баскетболистов в данной номинации"
-              />
-              <div class="fits__names">
-                <p class="fits__name">
-                  <span class="fits__firstname">brice</span>sensabaugh,
-                </p>
-                <p class="fits__name">
-                  <span class="fits__firstname">scoot</span>henderson,
-                </p>
-                <p class="fits__name">
-                  <span class="fits__firstname">victor</span>webmanyama,
-                </p>
-                <p class="fits__name">
-                  <span class="fits__firstname">jaime</span>jaquez jr.,
-                </p>
-                <p class="fits__name">
-                  <span class="fits__firstname">amari</span>bailey
-                </p>
-              </div>
-            </article>
-            <h3>MOST VALUABLE PLAYER</h3>
-            <article class="fits__card">
-              <img
-                class="fits__team"
-                src="https://i.postimg.cc/G3Gjpjn6/2-1.jpg"
-                alt="Коллаж из фотографий Шай Гилджес-Александра"
-              />
-              <p class="fits__name__personal">
-                <span class="fits__firstname__personal">Shai</span
-                >gilgeous-alexander
-              </p>
-            </article>
-            <h3>ROOKIE OF THE YEAR</h3>
-            <article class="fits__card">
-              <img
-                class="fits__team"
-                src="https://i.postimg.cc/CL4HGL1N/2-4.jpg"
-                alt="Коллаж из фотографий Виктора Вембаньямы"
-              />
-              <p class="fits__name__personal">
-                <span class="fits__firstname__personal">Victor</span>Wembanyama
-              </p>
-            </article>
-            <h3>MOST IMPROVED PLAYER</h3>
-            <article class="fits__card">
-              <img
-                class="fits__team"
-                src="https://i.postimg.cc/P5rb2svk/2-3.jpg"
-                alt="Коллаж из фотографий Альперена Шенгюна"
-              />
-              <p class="fits__name__personal">
-                <span class="fits__firstname__personal">alperen</span>Şengün
-              </p>
-            </article>
-            <h3>HONORABLE MENTIONS</h3>
-            <article class="fits__card">
-              <img
-                class="fits__team"
-                src="https://i.postimg.cc/5NJSQFxy/2-2.jpg"
-                alt="Пятерка новичков баскетболистов в данной номинации"
-              />
-              <div class="fits__groups">
-                <p class="fits__groups__names"><span>kyrie</span>irving</p>
-                <p class="fits__groups__names"><span>kyle</span>kuzma</p>
-                <p class="fits__groups__names">
-                  <span>karl-anthony</span>towns
-                </p>
-                <p class="fits__groups__names"><span>jayson</span>tatum</p>
-                <p class="fits__groups__names"><span>jeremy</span>sochan</p>
-                <p class="fits__groups__names"><span>terry</span>rozier</p>
-                <p class="fits__groups__names"><span>alperen</span>sengun</p>
-                <p class="fits__groups__names">
-                  <span>thanasis</span>antetokounmpo
-                </p>
-                <p class="fits__groups__names"><span>pj</span>tucker</p>
-                <p class="fits__groups__names"><span>terance</span>mann</p>
-              </div>
-            </article>
+            </div>
           </div>
         </div>
         <div>

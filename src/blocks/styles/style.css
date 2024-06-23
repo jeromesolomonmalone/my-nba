@@ -925,6 +925,14 @@ body {
   block-size: 50%;
 }
 
+.fits__round_of_16_after span {
+  block-size: 25%;
+  border-block-start: 2px solid var(--line-color);
+  border-block-end: 2px solid var(--line-color);
+  border-inline-end: 2px solid var(--line-color);
+  position: relative;
+}
+
 .semifinals__between span:first-of-type {
   border-inline-start: 2px solid var(--line-color);
   border-block-end: 1px solid var(--line-color);
@@ -1375,7 +1383,8 @@ body {
   block-size: 60px;
 }
 
-.detail__stats p:first-of-type {
+.fits__couple p {
+  background: var(--light-color);
 }
 
 .detail__stats__number {
@@ -1655,24 +1664,23 @@ body {
   text-align: end;
 }
 
+.fits__button {
+  display: flex;
+  align-items: end;
+  gap: 10px;
+}
+
 .fits__title {
-  padding-block-start: 30px;
   font-weight: 450;
   font-size: 30px;
   line-height: 30px;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-}
-
-.fits__author {
-  display: flex;
-  align-items: end;
-  gap: 10px;
-  margin: 15px 0 40px;
+  margin: 30px 0 40px;
 }
 
 .fits__link__logo {
-  inline-size: 95px;
+  block-size: 30px;
 }
 
 .fits h3 {
@@ -1761,6 +1769,154 @@ body {
   line-height: 1.1;
   text-align: center;
   text-transform: uppercase;
+}
+
+.fits__playoff {
+  position: relative;
+}
+
+.fits__playoff__half {
+  display: grid;
+  grid-template-columns: 27% 1fr 1fr 27% 1fr 1fr 27%;
+  align-items: center;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+}
+
+.fits__playoff__half:not(:first-of-type) {
+  margin-block-start: 10%;
+}
+
+.fits__couple {
+  position: relative;
+  inline-size: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.fits__couple__name_win {
+  font-weight: 500;
+  text-shadow: 0 0 5px rgb(0 0 0 / 0.5);
+}
+
+.fits__round_of_16 .fits__couple:not(:first-of-type) {
+  margin-block-start: 20%;
+}
+
+.fits__couple__player {
+  inline-size: 100%;
+  margin: 5px 0;
+}
+
+.fits__couple__name_down {
+  margin-left: auto;
+}
+
+.fits__round_of_16_after {
+  block-size: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25%;
+}
+
+.fits__round_of_16_after span::before,
+.fits__round_of_8_after::before {
+  content: "";
+  position: absolute;
+  block-size: calc(100% + 4px);
+  inline-size: 400%;
+  border-block-start: 2px solid var(--line-color);
+  border-block-end: 2px solid var(--line-color);
+  top: -2px;
+  right: 100%;
+  z-index: -1;
+}
+
+.fits__round_of_8_before {
+  block-size: 50%;
+  border-block-start: 2px solid var(--line-color);
+  border-block-end: 2px solid var(--line-color);
+  position: relative;
+}
+
+.fits__round_of_8_before::before {
+  content: "";
+  position: absolute;
+  block-size: calc(100% + 4px);
+  inline-size: 400%;
+  border-block-start: 2px solid var(--line-color);
+  border-block-end: 2px solid var(--line-color);
+  top: -2px;
+  left: 100%;
+  z-index: -1;
+}
+
+.fits__round_of_8_after {
+  block-size: 50%;
+  border-block-start: 2px solid var(--line-color);
+  border-block-end: 2px solid var(--line-color);
+  border-inline-end: 2px solid var(--line-color);
+  position: relative;
+}
+
+.fits__round_of_8 .fits__couple:not(:first-of-type) {
+  margin-block-start: 250%;
+}
+
+.fits__round_of_4_before {
+  block-size: 0%;
+  border-block-start: 2px solid var(--line-color);
+  position: relative;
+}
+
+.fits__round_of_4_before::before {
+  content: "";
+  position: absolute;
+  block-size: 100%;
+  inline-size: 400%;
+  border-block-start: 2px solid var(--line-color);
+  top: -2px;
+  left: 100%;
+  z-index: -1;
+}
+
+.fits__playoff__final {
+  position: absolute;
+  inline-size: 33%;
+  right: 0;
+  top: 44%;
+  z-index: -1;
+}
+
+.fits__couple__name_winner {
+  font-size: 20px;
+  font-weight: 600;
+  text-shadow: 0 0 10px rgb(0 0 0 / 0.5);
+  text-transform: uppercase;
+  align-self: center;
+}
+
+.fits__playoff__final::before {
+  content: "";
+  position: absolute;
+  block-size: 180%;
+  inline-size: 0%;
+  border-inline-end: 2px solid var(--line-color);
+  bottom: 50%;
+  left: 60%;
+  z-index: -1;
+}
+
+.fits__playoff__final::after {
+  content: "";
+  position: absolute;
+  block-size: 180%;
+  inline-size: 0%;
+  border-inline-end: 2px solid var(--line-color);
+  top: 50%;
+  left: 60%;
+  z-index: -1;
 }
 
 .footer {
@@ -2242,6 +2398,10 @@ body {
     margin-inline-start: -110px;
     padding: 20px 0 20px 110px;
     inline-size: calc(100% + 220px);
+  }
+
+  .fits__playoff__half {
+    font-size: 16px;
   }
 
   .footer {
