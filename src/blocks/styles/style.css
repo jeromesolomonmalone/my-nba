@@ -15,6 +15,7 @@
   --font-link: "Roboto Condensed";
   --font-table: "Schibsted Grotesk";
   --font-fits: "Niconne";
+  --font-fits-gq: "Dela Gothic One";
 }
 
 *,
@@ -926,11 +927,11 @@ body {
 }
 
 .fits__round_of_16_after span {
-  block-size: 25%;
+  position: relative;
+  border-inline-end: 2px solid var(--line-color);
   border-block-start: 2px solid var(--line-color);
   border-block-end: 2px solid var(--line-color);
-  border-inline-end: 2px solid var(--line-color);
-  position: relative;
+  block-size: 25%;
 }
 
 .semifinals__between span:first-of-type {
@@ -1671,12 +1672,12 @@ body {
 }
 
 .fits__title {
+  margin: 30px 0 40px;
   font-weight: 450;
   font-size: 30px;
   line-height: 30px;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  margin: 30px 0 40px;
 }
 
 .fits__link__logo {
@@ -1789,9 +1790,9 @@ body {
 
 .fits__couple {
   position: relative;
-  inline-size: 100%;
   display: flex;
   flex-direction: column;
+  inline-size: 100%;
 }
 
 .fits__couple__name_win {
@@ -1804,8 +1805,8 @@ body {
 }
 
 .fits__couple__player {
-  inline-size: 100%;
   margin: 5px 0;
+  inline-size: 100%;
 }
 
 .fits__couple__name_down {
@@ -1813,51 +1814,51 @@ body {
 }
 
 .fits__round_of_16_after {
-  block-size: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 25%;
+  block-size: 100%;
 }
 
 .fits__round_of_16_after span::before,
 .fits__round_of_8_after::before {
   content: "";
   position: absolute;
-  block-size: calc(100% + 4px);
-  inline-size: 400%;
-  border-block-start: 2px solid var(--line-color);
-  border-block-end: 2px solid var(--line-color);
   top: -2px;
   right: 100%;
   z-index: -1;
+  border-block-start: 2px solid var(--line-color);
+  border-block-end: 2px solid var(--line-color);
+  block-size: calc(100% + 4px);
+  inline-size: 400%;
 }
 
 .fits__round_of_8_before {
-  block-size: 50%;
+  position: relative;
   border-block-start: 2px solid var(--line-color);
   border-block-end: 2px solid var(--line-color);
-  position: relative;
+  block-size: 50%;
 }
 
 .fits__round_of_8_before::before {
   content: "";
   position: absolute;
-  block-size: calc(100% + 4px);
-  inline-size: 400%;
-  border-block-start: 2px solid var(--line-color);
-  border-block-end: 2px solid var(--line-color);
   top: -2px;
   left: 100%;
   z-index: -1;
+  border-block-start: 2px solid var(--line-color);
+  border-block-end: 2px solid var(--line-color);
+  block-size: calc(100% + 4px);
+  inline-size: 400%;
 }
 
 .fits__round_of_8_after {
-  block-size: 50%;
+  position: relative;
+  border-inline-end: 2px solid var(--line-color);
   border-block-start: 2px solid var(--line-color);
   border-block-end: 2px solid var(--line-color);
-  border-inline-end: 2px solid var(--line-color);
-  position: relative;
+  block-size: 50%;
 }
 
 .fits__round_of_8 .fits__couple:not(:first-of-type) {
@@ -1865,58 +1866,111 @@ body {
 }
 
 .fits__round_of_4_before {
-  block-size: 0%;
-  border-block-start: 2px solid var(--line-color);
   position: relative;
+  border-block-start: 2px solid var(--line-color);
+  block-size: 0%;
 }
 
 .fits__round_of_4_before::before {
   content: "";
   position: absolute;
-  block-size: 100%;
-  inline-size: 400%;
-  border-block-start: 2px solid var(--line-color);
   top: -2px;
   left: 100%;
   z-index: -1;
+  border-block-start: 2px solid var(--line-color);
+  block-size: 100%;
+  inline-size: 400%;
 }
 
 .fits__playoff__final {
   position: absolute;
-  inline-size: 33%;
-  right: 0;
   top: 44%;
+  right: 0;
   z-index: -1;
+  inline-size: 33%;
 }
 
 .fits__couple__name_winner {
-  font-size: 20px;
-  font-weight: 600;
-  text-shadow: 0 0 10px rgb(0 0 0 / 0.5);
-  text-transform: uppercase;
   align-self: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgb(0 0 0 / 0.5);
+  background: var(--light-color);
 }
 
 .fits__playoff__final::before {
   content: "";
   position: absolute;
-  block-size: 180%;
-  inline-size: 0%;
-  border-inline-end: 2px solid var(--line-color);
   bottom: 50%;
   left: 60%;
   z-index: -1;
+  border-inline-end: 2px solid var(--line-color);
+  block-size: 180%;
+  inline-size: 0%;
 }
 
 .fits__playoff__final::after {
   content: "";
   position: absolute;
-  block-size: 180%;
-  inline-size: 0%;
-  border-inline-end: 2px solid var(--line-color);
   top: 50%;
   left: 60%;
   z-index: -1;
+  border-inline-end: 2px solid var(--line-color);
+  block-size: 150%;
+  inline-size: 0%;
+}
+
+.fits__gq__winner {
+  position: relative;
+  display: inline-block;
+}
+
+.fits__gq__winner::after {
+  content: "";
+  display: block;
+  background: url(https://i.postimg.cc/YqJB7pDK/icons8-96-1-1.png)
+    center/contain no-repeat;
+  inline-size: 25px;
+  block-size: 25px;
+  bottom: 70%;
+  right: -12%;
+  position: absolute;
+  transform: rotate(20deg);
+}
+
+.fits__gq__winner__card {
+  position: relative;
+  margin-block-end: 20px;
+}
+
+.fits__gq__winner__card__up {
+  inline-size: 100%;
+}
+
+.fits__gq__winner__card__name {
+  font-size: 3.5rem;
+  position: absolute;
+  top: 12%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  display: block;
+  inline-size: min-content;
+  text-align: center;
+  font-family: var(--font-fits-gq);
+  text-transform: uppercase;
+  text-shadow: 0 10px 0 var(--light-color);
+  -webkit-text-stroke: 1.5px var(--light-color);
+  letter-spacing: -0.05em;
+  line-height: 0.8;
+}
+
+.fits__gq__winner__card__down {
+  inline-size: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .footer {
@@ -2084,6 +2138,10 @@ body {
   .player__awards__photo {
     inline-size: 75px;
     block-size: 75px;
+  }
+
+  .fits__gq__winner__card__name {
+    font-size: 3.3rem;
   }
 
   .footer {
@@ -2402,6 +2460,10 @@ body {
 
   .fits__playoff__half {
     font-size: 16px;
+  }
+
+  .fits__gq__winner__card__name {
+    font-size: clamp(3.5rem, -1.5934rem + 10.625vw, 5.2rem);
   }
 
   .footer {
@@ -2737,6 +2799,11 @@ body {
 
   .fits__firstname__personal {
     font-size: 38px;
+  }
+
+  .fits__gq__winner__card__name {
+    text-shadow: 0 6px 0 var(--light-color);
+    font-size: clamp(1.8rem, -0.2045rem + 10.0224vw, 4.6rem);
   }
 
   .footer {
