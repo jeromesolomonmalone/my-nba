@@ -2059,6 +2059,14 @@ body {
   background: #c8102e;
 }
 
+.team__nop {
+  background: #0c2340;
+}
+
+.team__atl {
+  background: #e03a3e;
+}
+
 .trade__card__where {
   position: absolute;
   right: 0;
