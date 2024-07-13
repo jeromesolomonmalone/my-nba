@@ -93,6 +93,11 @@ body {
   inline-size: 100%;
 }
 
+.menu__sticky__hidden li {
+  block-size: 55px;
+  inline-size: 100%;
+}
+
 .header__open__navigation li:last-child {
   margin-block-start: 12px;
 }
@@ -384,7 +389,7 @@ body {
 }
 
 .main__color__brooklyn {
-  background: #333333;
+  background: #333;
 }
 
 .main__color__charlotte {
@@ -533,18 +538,13 @@ body {
   top: 100%;
   right: 0;
   padding: 5px 0 10px;
-  box-shadow: 0 6px 12px 0 rgb(0, 0, 0, 0.2);
+  box-shadow: 0 6px 12px 0 rgb(0 0 0 / 0.2);
   background: var(--light-color);
   inline-size: 270px;
 }
 
 .menu__sticky__hide {
   display: none;
-}
-
-.menu__sticky__hidden li {
-  block-size: 55px;
-  inline-size: 100%;
 }
 
 .menu__button__hidden {
@@ -1316,16 +1316,17 @@ body {
   justify-content: space-between;
 }
 
+.stats__card__hidden {
+  margin: 20px 0;
+  padding: 20px 0 0;
+}
+
 .input ~ .stats__card__hidden {
   display: none;
 }
 
 .input:checked ~ .stats__card__hidden {
   display: block;
-}
-
-.input:checked + .player__stats__card {
-  display: none;
 }
 
 .player__stats__card {
@@ -1338,8 +1339,30 @@ body {
   inline-size: 250px;
 }
 
+.stats__card__title::after {
+  content: "";
+  display: inline-block;
+  margin-inline-start: 2px;
+  background: url("https://svgshare.com/i/16Ti.svg") center/contain no-repeat;
+  transition: transform 0.15s ease-out;
+  inline-size: 16px;
+  block-size: 16px;
+}
+
+.stats__card__hidden .stats__card__title::after {
+  transform: translateX(5px) rotate(90deg);
+}
+
+.player__stats__card:hover .stats__card__title::after {
+  transform: translateX(5px);
+}
+
 .player__stats__card:hover {
   background: #f0f0f0;
+}
+
+.input:checked + .player__stats__card {
+  display: none;
 }
 
 .player__stats__card::after {
@@ -1357,20 +1380,6 @@ body {
   font-size: 18px;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-}
-
-.stats__card__title::after {
-  content: "";
-  display: inline-block;
-  margin-inline-start: 2px;
-  background: url("https://svgshare.com/i/16Ti.svg") center/contain no-repeat;
-  transition: transform 0.15s ease-out;
-  inline-size: 16px;
-  block-size: 16px;
-}
-
-.player__stats__card:hover .stats__card__title::after {
-  transform: translateX(5px);
 }
 
 .stats__card__main {
@@ -1468,15 +1477,6 @@ body {
   text-transform: uppercase;
   inline-size: min-content;
   white-space: nowrap;
-}
-
-.stats__card__hidden {
-  margin: 20px 0;
-  padding: 20px 0 0;
-}
-
-.stats__card__hidden .stats__card__title::after {
-  transform: translateX(5px) rotate(90deg);
 }
 
 .stats__card__hidden__table {
@@ -1896,12 +1896,22 @@ body {
   border-block-end: 1px solid var(--line-color);
 }
 
-.start__table__header th:not(:first-child):not(:last-child) {
+.start__table__header th:last-child {
+  padding: 0 0 13px;
+}
+
+.draft__table th:not(:first-child) {
   padding: 0 5px 13px;
 }
 
-.start__table__header th:last-child {
-  padding: 0 0 13px;
+.draft__table th:first-child {
+  padding: 0 5px 13px 0;
+  color: var(--header-link);
+  font-weight: 400;
+}
+
+.start__table__header th:not(:first-child):not(:last-child) {
+  padding: 0 5px 13px;
 }
 
 .start__table__head_first {
@@ -2528,16 +2538,6 @@ body {
   border-collapse: collapse;
 }
 
-.draft__table th:not(:first-child) {
-  padding: 0 5px 13px;
-}
-
-.draft__table th:first-child {
-  padding: 0 5px 13px 0;
-  color: var(--header-link);
-  font-weight: 400;
-}
-
 .draft__player__card {
   border-block-start: 1px solid var(--line-color);
 }
@@ -2811,7 +2811,7 @@ body {
 }
 
 .free_agency__advertisement__item__link:hover {
-  color: rgb(69, 69, 69);
+  color: rgb(69 69 69);
 }
 
 .free_agency__advertisement__item__img {
@@ -3181,7 +3181,7 @@ body {
 
   .menu__button__hidden:hover {
     color: var(--light-color);
-    background: rgba(255, 255, 255, 0.7);
+    background: rgb(255 255 255 / 0.7);
   }
 
   .main__color__atlanta__min_width {
@@ -3193,7 +3193,7 @@ body {
   }
 
   .main__color__brooklyn__min_width {
-    background: #333333;
+    background: #333;
   }
 
   .main__color__charlotte__min_width {
@@ -3376,16 +3376,16 @@ body {
     font-size: 14px;
   }
 
+  .player__stats__card {
+    inline-size: 33vw;
+  }
+
   .player__stats__card:hover {
     background: transparent;
   }
 
   .player__stats__card:hover .stats__card__title::after {
     transform: translateX(0);
-  }
-
-  .player__stats__card {
-    inline-size: 33vw;
   }
 
   .stats__card__hidden__table {
@@ -3449,7 +3449,7 @@ body {
     top: 0;
     left: 0;
     display: block;
-    background: linear-gradient(-180deg, rgb(0 0 0 / 0%) 0%, #000 100%);
+    background: linear-gradient(-180deg, rgb(0 0 0 / 0) 0%, #000 100%);
     inline-size: 100%;
     block-size: 100%;
   }
