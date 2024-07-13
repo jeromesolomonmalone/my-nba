@@ -77,7 +77,7 @@ body {
 }
 
 .fox_sports_logo {
-  color: var(--main-color);
+  fill: var(--main-color);
   inline-size: 69px;
 }
 
