@@ -32,7 +32,7 @@
     <header class="header">
       <a href="#">
         <svg viewBox="0 0 69 42" class="fox_sports_logo menu__button__reset">
-          <use href="./images/fox_sports_logo.svg"></use>
+          <use href="./images/fox_sports_logo.svg#fox_sports_logo"></use>
         </svg>
       </a>
       <nav class="header__navigation">
@@ -47,14 +47,14 @@
           <li>
             <a href="#"
               >Search<svg viewBox="0 0 15 15" class="search_logo">
-                <use href="./images/search_logo.svg"></use>
+                <use href="./images/search_logo.svg#search_logo"></use>
               </svg>
             </a>
           </li>
           <li>
             <a href="#"
               >Sign in<svg viewBox="0 0 16 16" class="arrow_logo">
-                <use href="./images/arrow_logo.svg"></use>
+                <use href="./images/arrow_logo.svg#arrow_logo"></use>
               </svg>
             </a>
           </li>
@@ -74,20 +74,20 @@
       <div class="header__hidden header__hidden__grid_span">
         <a class="header__favorites" href="#"
           ><svg viewBox="0 0 24 24" class="star_logo">
-            <use href="./images/star_logo.svg"></use>
+            <use href="./images/star_logo.svg#star_logo"></use>
           </svg>
           My favs
         </a>
         <button popovertarget="popover">
           <svg viewBox="0 0 24 24" class="three_lines_logo">
-            <use href="./images/three_lines_logo.svg"></use>
+            <use href="./images/three_lines_logo.svg#three_lines_logo"></use>
           </svg>
         </button>
         <article id="popover" popover="auto" class="hidden_menu">
           <div class="dialog__block">
             <a href="#"
               ><svg viewBox="0 0 69 42" class="fox_sports_logo_dialog">
-                <use href="./images/fox_sports_logo.svg"></use>
+                <use href="./images/fox_sports_logo.svg#fox_sports_logo"></use>
               </svg>
             </a>
             <nav class="dialog__icons">
@@ -149,7 +149,7 @@
         </div>
         <button class="main__button" type="button">
           <svg viewBox="0 0 24 24" class="button__star">
-            <use href="./images/button__star.svg"></use>
+            <use href="./images/button__star.svg#button__star"></use>
           </svg>
           <span class="button__text">follow</span>
         </button>
@@ -223,7 +223,7 @@
               <label class="menu__button menu__button__more" for="more"
                 >More
                 <svg viewBox="0 0 16 16" class="hidden__menu__arrow">
-                  <use href="./images/arrow-hidden-menu.svg"></use>
+                  <use href="./images/arrow-hidden-menu.svg#arrow-hidden-menu"></use>
                 </svg>
               </label>
               <ul class="menu__sticky__hidden menu__sticky__hide">
@@ -19926,9 +19926,15 @@
                       <button type="button" class="free_agency__follow__button">
                         <svg
                           viewBox="0 0 24 24"
-                          class="free_agency__follow__star"
+                          class="free_agency__follow__star__black"
                         >
-                          <use href="./images/button__star.svg"></use>
+                          <use href="./images/button_star_black.svg#button__star__black"></use>
+                        </svg>
+                        <svg
+                          viewBox="0 0 24 24"
+                          class="free_agency__follow__star__white"
+                        >
+                          <use href="./images/button__star.svg#button__star"></use>
                         </svg>
                       </button>
                       <p class="free_agency__follow__text">
@@ -19943,7 +19949,7 @@
                         viewBox="0 0 16 16"
                         class="free_agency__share__logo"
                       >
-                        <use href="./images/share__logo.svg"></use>
+                        <use href="./images/share__logo.svg#share_logo"></use>
                       </svg>
                     </button>
                     <h2 class="free_agency__header__title">
@@ -21571,7 +21577,7 @@
       const menuStickyHidden = document.querySelector(".menu__sticky__hidden");
       const hiddenMenuInput = document.querySelector(".menu__button__hidden");
       const menuButtonHidden = document.querySelectorAll(
-        ".menu__button__hidden"
+        ".menu__button__hidden",
       );
       const menuButtonMore = document.querySelector(".menu__button__more");
       const menuButton = document.querySelectorAll(".menu__button");
@@ -21635,13 +21641,13 @@
       });
       const mainLogoImage = document.querySelector(".main__logo__image");
       const headerHiddenLogoImage = document.querySelector(
-        ".header__hidden__logo__image"
+        ".header__hidden__logo__image",
       );
       const mainTitle = document.querySelector(".main__title");
       const mainLine = document.querySelector(".main__line");
       const mainTeamInfo = document.querySelector(".main__team__info");
       const menuStickyResetTeam = document.querySelector(
-        ".menu__sticky__reset__team"
+        ".menu__sticky__reset__team",
       );
       const menuStickyReset = document.querySelector(".menu__sticky__reset");
       const rosterCeltics = document.querySelector(".roster__celtics");
@@ -22004,7 +22010,7 @@
             "main__color__indiana",
             "main__color__clippers",
             "main__color__lakers",
-            "main__color__memphis"
+            "main__color__memphis",
           );
           header.classList.remove(
             "main__color__boston__min_width",
@@ -22021,7 +22027,7 @@
             "main__color__indiana__min_width",
             "main__color__clippers__min_width",
             "main__color__lakers__min_width",
-            "main__color__memphis__min_width"
+            "main__color__memphis__min_width",
           );
           menuSticky.classList.remove(
             "main__color__boston__min_width",
@@ -22038,7 +22044,7 @@
             "main__color__indiana__min_width",
             "main__color__clippers__min_width",
             "main__color__lakers__min_width",
-            "main__color__memphis__min_width"
+            "main__color__memphis__min_width",
           );
           menuStickyHidden.classList.remove(
             "main__color__boston__min_width",
@@ -22055,7 +22061,7 @@
             "main__color__indiana__min_width",
             "main__color__clippers__min_width",
             "main__color__lakers__min_width",
-            "main__color__memphis__min_width"
+            "main__color__memphis__min_width",
           );
           headerHiddenLogoImage.alt = "Логотип NBA";
           headerHiddenLogoImage.src = "https://svgshare.com/i/16KF.svg";
